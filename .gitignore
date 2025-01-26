@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+.venv/
+
+# macOS files
+.DS_Store
+
+# Python specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.eggs/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints
+
+# pytest
+.cache/
+
+# Local environment
+.env
+.venv
+
+# Dash assets
+assets/.DS_Store
+assets/*.log
+
+# Data files (if generated or temporary)
+data/*.csv
+data/*.json
+data/*.xlsx
+
+# VS Code settings (if applicable)
+.vscode/
+
+# Deployment files
+*.local
+*.lock
