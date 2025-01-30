@@ -1,0 +1,19 @@
+/* Default body gradient */
+body {
+    background: linear-gradient(to right, #9ae7eb, #bff0b7);
+}
+
+/* Define a CSS variable for text color */
+:root {
+    --text-color: #404747;  /* Change this value to change the text color globally */
+}
+
+/* Apply the variable to the text color */
+body, .text-dark, .navbar-brand, .navbar-toggler-icon span, .navbar-nav .nav-link {
+    color: var(--text-color) !important;
+}
+
+/* Optionally, if you want to control the hover color as well */
+.navbar-nav .nav-link:hover {
+    color: var(--text-color) !important;
+}
