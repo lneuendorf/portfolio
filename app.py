@@ -1,8 +1,9 @@
 import dash
 import dash_bootstrap_components as dbc
 from dash import html
-from pages import homepage
+import sections
 from components.navbar import navbar
+from components.footer import footer
 from components.callbacks import register_callbacks
 
 app = dash.Dash(
@@ -15,9 +16,8 @@ app.title = 'Luke Neuendorf'
 # Make navbar fluid, so it spans the entire width
 app.layout = html.Div([
     navbar,
-    dbc.Col([
-        homepage.layout
-    ], style={'padding': '20px', 'maxWidth': '2000px', 'margin': '0 auto'})
+    sections.tldr,
+    footer
 ])
 
 # Register callbacks
