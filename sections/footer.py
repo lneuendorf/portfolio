@@ -1,7 +1,6 @@
 from dash import html
 import dash_bootstrap_components as dbc
 
-# Social media icons, replace with actual links
 footer = html.Div(
     children=[
         dbc.Row(
@@ -71,5 +70,5 @@ footer = html.Div(
         ),
     ],
     className="bg-dark text-light py-1",
-    id="footer",  # Add an id to target the footer
+    id="footer",
 )

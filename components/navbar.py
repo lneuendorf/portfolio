@@ -1,23 +1,19 @@
 import dash_bootstrap_components as dbc
 
-# Navbar component with links to sections
 navbar = dbc.Navbar(
     dbc.Container([
-        # Bold name for the brand
         dbc.NavbarBrand(
             "Luke Neuendorf", 
             className="ms-2 fw-bold text-dark", 
             style={"fontSize": "24px"}
         ),
         
-        # Toggler for mobile view (hamburger icon)
         dbc.NavbarToggler(
             id="navbar-toggler",
             n_clicks=0,
-            className="custom-toggler"  # Add a custom class to target the icon in CSS
+            className="custom-toggler"
         ),
         
-        # Collapsable Nav links (shown when toggler is clicked on smaller screens)
         dbc.Collapse(
             dbc.Nav(
                 [
@@ -32,12 +28,12 @@ navbar = dbc.Navbar(
             id="navbar-collapse",
             is_open=False,
             navbar=True,
-            className="justify-content-end text-end"  # Right-align links, padding on the right
+            className="justify-content-end text-end"
         ),
-    ], fluid=True),  # Full-width container
+    ], fluid=True),
     color="white",
     dark=False,
     sticky="top",
-    className="py-1",  # Reduce vertical padding to make the navbar less tall
-    style={"borderBottom": "2px solid #404747"}  # Add grey line at the bottom
+    className="py-1",
+    style={"borderBottom": "2px solid #404747"}
 )
