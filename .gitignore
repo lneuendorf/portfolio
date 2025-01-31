@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Test notebooks
+test.ipynb
+
 # Virtual environment
 venv/
 ENV/
