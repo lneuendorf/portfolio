@@ -14,13 +14,13 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2  # Changed to stable v2
+        uses: actions/checkout@v2  # Stable v2 version
 
       - name: Setup Pages
         if: github.ref == 'refs/heads/release'  # Check for 'release' branch
-        uses: actions/configure-pages@v2  # Use a stable version of the action
+        uses: actions/configure-pages@v2  # Stable version
 
-      - name: Setup python
+      - name: Setup Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.12'
@@ -38,7 +38,7 @@ jobs:
 
       - name: Upload Artifact
         if: github.ref == 'refs/heads/release'  # Check for 'release' branch
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4  # Updated to v4 (latest version)
         with:
           path: "./pages_files"
 
