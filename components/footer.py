@@ -11,7 +11,9 @@ footer = html.Div(
                         children=[
                             dbc.NavItem(
                                 dbc.NavLink(
-                                    "BlueSky", href="https://bsky.app/profile/lukeneuendorf.bsky.social", target="_blank", className="text-light"
+                                    html.Img(src="/assets/linkedin.png", height="30px"),
+                                    href="https://www.linkedin.com/in/luke-neuendorf/", target="_blank",
+                                    className="text-light"
                                 )
                             ),
                             dbc.NavItem(
@@ -23,8 +25,8 @@ footer = html.Div(
                             ),
                             dbc.NavItem(
                                 dbc.NavLink(
-                                    html.Img(src="/assets/linkedin.png", height="30px"),
-                                    href="https://www.linkedin.com/in/luke-neuendorf/", target="_blank",
+                                    html.Img(src="/assets/bluesky.png", height="30px"),
+                                    href="https://bsky.app/profile/lukeneuendorf.bsky.social", target="_blank",
                                     className="text-light"
                                 )
                             ),
