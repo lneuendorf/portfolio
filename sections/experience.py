@@ -160,7 +160,7 @@ experience = (
         "padding-left": CONFIG['padding-left'],
         "padding-right": CONFIG['padding-right'],
         "padding-top": "40px",
-        "padding-bottom": "40px",
+        "padding-bottom": "20px",
         "background-color": "#333333",
         "color": "white",
         "justify-content": "center",

@@ -50,7 +50,10 @@ footer = html.Div(
             children=[
                 dbc.Col(
                     html.P(
-                        "Made with Dash Plotly",
+                        [
+                            "Made with ",
+                            html.A("Dash Plotly", href="https://dash.plotly.com/", className="text-light", target="_blank"),
+                        ],
                         className="text-center text-light",
                     ),
                     width=12,
