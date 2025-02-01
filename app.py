@@ -22,10 +22,7 @@ app.layout = html.Div([
     navbar,
     about,
     experience,
-    education,
-    projects,
-    skills,
-    footer
+    # education,
 ])
 
 register_callbacks(app)

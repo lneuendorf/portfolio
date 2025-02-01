@@ -15,36 +15,48 @@ about = (
                         "max-width": "400px",
                         "object-fit": "cover",
                         "transform": "scale(1.5)",
+                        "padding-top": "20px",
                     },
                     loop=True,
                     autoPlay=True,
                     muted=True,
                     controls=False,
                 )
-            ]),
+            ], className="d-flex justify-content-center"),
             html.Script("""
                 document.querySelector('video').setAttribute('playsinline', '');
             """)
-        ], sm=12, md=5),
+        ], sm=12, md=5, className="d-flex justify-content-center"),
         dbc.Col([
-            html.P(
-                "Hi, my name is", 
-                style={"font-size": "18px", "margin-bottom": "5px"}
-            ), html.H1(
-                "Luke", 
-                style={"font-size": "36px", "margin-bottom": "10px"}
-            ), html.P([
-                "I'm a data engineer with a background in computer engineering. ",
-                "I specialize in machine learning, data science, and cloud-based solutions, ",
-                "and have extensive experience in building APIs, automating processes, and developing predictive models. ",
-                "I earned my MS in Computer Engineering with a focus on machine learning from the University of Wisconsin-Madison. ",
-                "Currently, I'm working as a Data Engineer at Schneider National, where I build scalable data pipelines ",
-                "and deploy machine learning models to Azure Kubernetes."
-            ], style={}),
-        ], sm=12, md=7),
+            html.Div([
+                html.P(
+                    "Hi, my name is", 
+                    style={"font-size": "18px", "margin-bottom": "5px"}
+                ),
+                html.H1(
+                    "Luke", 
+                    style={"font-size": "36px", "margin-bottom": "10px"}
+                ),
+                html.P([
+                    "I am a Green Bay based Data Engineer with a bachground in Computer Engineering "
+                    "and Machine Learning. I enjoys spending my free time on sports analytics "
+                    "related side projects, but you can also find me playing disc golf, ultimate "
+                    "frisbee, or watching the Packers."
+                ], style={"text-align": "justify"}),
+            ], className="text-left")
+        ], sm=12, md=7, className="d-flex align-items-center justify-content-center"),
     ],
     style={
+        "min-height": "calc(100vh - 64px)",  # Adjust for navbar height (including underline)
         "padding-left": CONFIG['padding-left'],
         "padding-right": CONFIG['padding-right'],
+        "padding-top": "20px",
+        "padding-bottom": "20px",
+        "display": "flex",
+        "align-items": "center",
+        "justify-content": "center",
+        "flex-wrap": "wrap",
+        "max-width": CONFIG['max-width'],
+        "margin": "0 auto",
     })
 )

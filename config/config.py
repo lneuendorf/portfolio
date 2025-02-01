@@ -1,4 +1,5 @@
 CONFIG = {
     'padding-left': '20px',
     'padding-right': '20px',
+    'max-width': '1200px',
 }

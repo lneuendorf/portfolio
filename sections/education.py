@@ -1,6 +1,8 @@
 from dash import html
 import dash_bootstrap_components as dbc
 
+from config.config import CONFIG
+
 education = dbc.Row([
     html.H2("Education", className="text-center text-white my-4"),
 
@@ -71,12 +73,13 @@ education = dbc.Row([
                 width={"size": 12, "offset": 0},
             ),
         ],
-        className="mb-4",
+        # className="mb-4", 
     ),
 ], justify="center", className="d-flex flex-wrap", style={
-    "padding-left": "20px",
-    "padding-right": "20px",
+    "padding-left": CONFIG['padding-left'],
+    "padding-right": CONFIG['padding-right'],
     "padding-top": "40px",
+    "padding-bottom": "40px",
     "background-color": "#28a745",
     "color": "white",
     "border-radius": "10px",
