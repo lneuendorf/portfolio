@@ -8,6 +8,7 @@ test.ipynb
 
 # Github Command Files
 merge.sh
+commit.sh
 
 # Virtual environment
 venv/
