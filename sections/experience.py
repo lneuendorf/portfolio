@@ -50,11 +50,10 @@ experience = (
                     html.Ul([
                         html.Li("Developed a process-based model to classify late orders by cause, "
                                 "deployed it to Azure Kubernetes Service, and automated reason tagging"
-                                 " for 43% of ~250 daily late orders."),
+                                 " of daily late orders."),
                         html.Li("Upgraded a legacy Java data pipeline for appointment scheduling "
-                                "model to Python using VSCode, GitHub Copilot, and SQL, modernizing "
-                                "it for cloud deployment."),
-                        html.Li("Created API’s for several projects using Flask."),
+                                "model to Python using VSCode, GitHub Copilot, and SQL."),
+                        html.Li("Created API’s using Flask."),
                     ], className="text-light"),
                 ], sm=12, md=10),
             ],
