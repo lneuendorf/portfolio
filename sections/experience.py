@@ -15,7 +15,7 @@ experience = (
                 "margin": "0 auto",
                 "padding-bottom": "25px",
             },
-            className="text-md-start"
+            className="text-md-start text-center text-sm-center"
         ),
 
          # Divider Line

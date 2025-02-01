@@ -14,7 +14,7 @@ education = dbc.Row([
             "margin": "0 auto",
             "padding-bottom": "25px",
         },
-        className="text-md-start text-dark"
+        className="text-md-start text-dark text-center text-sm-center"
     ),
 
     # Divider Line

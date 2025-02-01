@@ -23,6 +23,8 @@ app.layout = html.Div([
     about,
     experience,
     education,
+    projects,
+    skills,
     footer,
 ])
 

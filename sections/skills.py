@@ -43,7 +43,7 @@ skills = dbc.Row([
     "padding-left": "20px", 
     "padding-right": "20px", 
     "padding-top": "40px", 
-    "background": "#e3e2de",
+    "background-color": "#e6eaea",
     "color": "black",  
     "border-radius": "10px", 
 })
