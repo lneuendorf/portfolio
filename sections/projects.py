@@ -97,7 +97,10 @@ projects = dbc.Row([
         style={"max-width": CONFIG['max-width']},
         className="mb-4",
     ),
-], justify="center", className="d-flex flex-wrap", style={
+], 
+justify="center", 
+className="d-flex flex-wrap", 
+style={
     "padding-left": "20px",
     "padding-right": "20px",
     "padding-top": "40px",

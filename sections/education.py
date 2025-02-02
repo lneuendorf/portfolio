@@ -105,7 +105,6 @@ education = dbc.Row([
     # Divider Line
     html.Div(style={"height": "10px"}),
     html.Hr(style={"border-top": "2px solid black", "width": "100%", "max-width": CONFIG['max-width']}),
-
 ],
 style={
     "padding-left": CONFIG['padding-left'],

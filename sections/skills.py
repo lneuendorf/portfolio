@@ -39,7 +39,10 @@ skills = dbc.Row([
             ], lg=4),
         ], className="mb-4"),
     ], lg=8)
-], justify="center", className="d-flex flex-wrap", style={
+], 
+justify="center", 
+className="d-flex flex-wrap", 
+style={
     "padding-left": "20px", 
     "padding-right": "20px", 
     "padding-top": "40px", 

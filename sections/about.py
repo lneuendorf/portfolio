@@ -51,7 +51,7 @@ about = (
         ], sm=12, md=7, className="d-flex align-items-center justify-content-center"),
     ],
     style={
-        "min-height": "calc(100vh - 64px)",  # Adjust for navbar height (including underline)
+        "min-height": "calc(100vh)",
         "padding-left": CONFIG['padding-left'],
         "padding-right": CONFIG['padding-right'],
         "padding-top": "20px",
