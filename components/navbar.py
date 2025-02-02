@@ -33,7 +33,7 @@ navbar = dbc.Navbar(
     ], fluid=True),
     color="white",
     dark=False,
-    sticky="top",
+    fixed="top",
     className="py-1",
-    style={"borderBottom": "2px solid #404747"}
+    style={"borderBottom": "2px solid gray"}
 )
