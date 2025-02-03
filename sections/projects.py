@@ -100,7 +100,7 @@ nfl_bdb_2025 = (
                 "height": "100%",
             },
         ),
-    ], sm=12, md=6, xl=6, className="d-flex justify-content-center")
+    ], className='mb-3')
 )
 
 nfl_bdb_2024 = (
@@ -187,7 +187,7 @@ nfl_bdb_2024 = (
                 "height": "100%",
             },
         ),
-    ], sm=12, md=6, xl=6, className="d-flex justify-content-center")
+    ], className='mb-3')
 )
 
 low_resource_machine_translation = (
@@ -277,7 +277,7 @@ low_resource_machine_translation = (
                 "height": "100%",
             },
         ),
-    ], sm=12, md=6, xl=6, className="d-flex justify-content-center")
+    ], className='mb-3')
 )
 
 saguage = (
@@ -358,18 +358,15 @@ saguage = (
                 "height": "100%",
             },
         ),
-    ], sm=12, md=6, xl=6, className="d-flex justify-content-center")
+    ], className='mb-3')
 )
 
 ffcrystalball = (
     dbc.Col([
         html.Div(
             children=[
-                html.Video(
-                    src="/assets/ffcrystalball.mov",
-                    autoPlay=True,
-                    loop=True,
-                    muted=True,
+                html.Img(
+                    src="/assets/ffcrystalball.gif",
                     style={
                         "width": "100%",
                         "height": "auto",
@@ -442,7 +439,7 @@ ffcrystalball = (
                 "height": "100%",
             },
         ),
-    ], sm=12, md=6, xl=6, className="d-flex justify-content-center")
+    ], className='mb-3')
 )
 
 octoberodds = (
@@ -522,23 +519,29 @@ octoberodds = (
                 "height": "100%",
             },
         ),
-    ], sm=12, md=6, xl=6, className="d-flex justify-content-center")
+    ])
 )
 
 projects = dbc.Row([
-    html.H2("Projects", className="text-center text-dark my-4"),
-    dbc.Row(
-        children=[
+    html.H2("Projects", className="text-center text-dark"),
+    html.Hr(style={"border-top": "2px solid black", "width": "100%", "max-width": CONFIG['max-width']}),
+
+    dbc.Row([
+        dbc.Col([
             nfl_bdb_2025,
             nfl_bdb_2024,
-            low_resource_machine_translation,
+            low_resource_machine_translation
+        ], sm=12, md=6, xl=6, className=""),
+        dbc.Col([
             saguage,
             ffcrystalball,
-            octoberodds,
-        ],
-        style={"max-width": CONFIG['max-width']},
-        className="mb-4",
-    ),
+            octoberodds
+        ], sm=12, md=6, xl=6, className="") 
+    ], style={
+        "max-width": CONFIG['max-width'],
+        # padding below
+        "padding": "10px 10px 30px 10px"
+    })
 ], 
 justify="center", 
 className="d-flex flex-wrap", 
