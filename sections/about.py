@@ -22,15 +22,12 @@ about = (
                     muted=True,
                     controls=False,
                 )
-            ], className="d-flex justify-content-center"),
-            html.Script("""
-                document.querySelector('video').setAttribute('playsinline', '');
-            """)
+            ], className="d-flex justify-content-center")
         ], sm=12, md=5, className="d-flex justify-content-center"),
         dbc.Col([
             html.Div([
                 html.P(
-                    "Hi, my name is", 
+                    "Hi 👋, my name is", 
                     style={"font-size": "18px", "margin-bottom": "5px"}
                 ),
                 html.H1(
@@ -38,14 +35,13 @@ about = (
                     style={"font-size": "36px", "margin-bottom": "10px"}
                 ),
                 html.P([
-                    "I am a Green Bay based Data Engineer with a bachground in Computer Engineering "
-                    "and Machine Learning. I enjoys spending my free time on sports analytics "
-                    "related side projects, but you can also find me playing disc golf, ultimate "
+                    "I am a Green Bay-based Data Engineer with a background in Computer Engineering "
+                    "and Machine Learning. I enjoy spending my free time on sports "
+                    "analytics-related side projects, but you can also find me playing disc golf, ultimate "
                     "frisbee, or watching the Packers."
                 ], style={"text-align": "justify"}),
-                # NOTE: this site is a work in progress
                 html.P([
-                    "NOTE: This site is a work in progress. Check back soon for updates!"
+                    "NOTE: This site is a work in progress."
                 ], style={"text-align": "justify", "font-style": "italic", "margin-top": "20px"}),
             ], className="text-left")
         ], sm=12, md=7, className="d-flex align-items-center justify-content-center"),
