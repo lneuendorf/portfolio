@@ -81,7 +81,7 @@ nfl_bdb_2025 = (
                         ),
                     ],
                     style={
-                        "background": "white",
+                        "background": "#f1f1ee",
                         "padding": "15px",
                         "text-align": "center",
                         "flex-grow": "1",  # Forces all content sections to be the same height
@@ -168,7 +168,7 @@ nfl_bdb_2024 = (
                         ),
                     ],
                     style={
-                        "background": "white",
+                        "background": "#f1f1ee",
                         "padding": "15px",
                         "text-align": "center",
                         "flex-grow": "1",
@@ -258,7 +258,7 @@ low_resource_machine_translation = (
                         ),
                     ],
                     style={
-                        "background": "white",
+                        "background": "#f1f1ee",
                         "padding": "15px",
                         "text-align": "center",
                         "flex-grow": "1",
@@ -339,7 +339,7 @@ saguage = (
                         ),
                     ],
                     style={
-                        "background": "white",
+                        "background": "#f1f1ee",
                         "padding": "15px",
                         "text-align": "center",
                         "flex-grow": "1",
@@ -420,7 +420,7 @@ ffcrystalball = (
                         ),
                     ],
                     style={
-                        "background": "white",
+                        "background": "#f1f1ee",
                         "padding": "15px",
                         "text-align": "center",
                         "flex-grow": "1",
@@ -500,7 +500,7 @@ octoberodds = (
                         ),
                     ],
                     style={
-                        "background": "white",
+                        "background": "#f1f1ee",
                         "padding": "15px",
                         "text-align": "center",
                         "flex-grow": "1",
@@ -522,9 +522,20 @@ octoberodds = (
     ])
 )
 
-projects = dbc.Row([
-    html.H2("Projects", className="text-center text-dark"),
-    html.Hr(style={"border-top": "2px solid black", "width": "100%", "max-width": CONFIG['max-width']}),
+projects = dbc.Row([    
+    html.H2(
+        "Projects",
+        style={
+            "margin-bottom": "30px",
+            "font-size": "32px",
+            "font-weight": "bold",
+            "max-width": CONFIG['max-width'],
+            "margin": "0 auto",
+            "padding-bottom": "20px",
+        },
+        className="text-center"
+    ),
+    html.Hr(style={"border-top": "2px solid white", "width": "100%", "max-width": CONFIG['max-width']}),
 
     dbc.Row([
         dbc.Col([
@@ -546,10 +557,10 @@ projects = dbc.Row([
 justify="center", 
 className="d-flex flex-wrap", 
 style={
-    "padding-left": "20px",
-    "padding-right": "20px",
+    "padding-left": CONFIG["padding-left"],
+    "padding-right": CONFIG["padding-left"],
     "padding-top": "40px",
-    "background-color": "#9ae7eb",
-    "color": "black",
+    "background-color": "#333333",
+    "color": "white",
     "border-radius": "10px",
 })

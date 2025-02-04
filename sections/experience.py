@@ -6,16 +6,16 @@ from config.config import CONFIG
 experience = (
     dbc.Row([
         html.H2(
-            "Relevant Work Experience", 
+            "Relevant Work Experience",
             style={
-                "margin-bottom": "30px", 
-                "font-size": "32px", 
+                "margin-bottom": "30px",
+                "font-size": "32px",
                 "font-weight": "bold",
-                "max-width": CONFIG['max-width'], 
+                "max-width": CONFIG['max-width'],
                 "margin": "0 auto",
                 "padding-bottom": "25px",
             },
-            className="text-md-start text-center text-sm-center"
+            className="text-center"
         ),
 
          # Divider Line

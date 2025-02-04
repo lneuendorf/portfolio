@@ -121,37 +121,49 @@ data_processing = dbc.Card([
 # Skills Section Layout
 skills = dbc.Row([
     dbc.Col([
-        html.H2("Skills", className="text-center text-dark"),
+        html.H2(
+            "Skills",
+            style={
+                "margin-bottom": "0px",
+                "font-size": "32px",
+                "font-weight": "bold",
+                "max-width": CONFIG['max-width'],
+                "margin": "0 auto",
+                "padding-bottom": "0px",
+            },
+            className="text-md-start text-dark text-center text-sm-center"
+        ),
         html.Hr(style={"border-top": "2px solid black", "width": "100%", "max-width": CONFIG['max-width']}),
-        # Responsive Skill Cards (3 per row on large screens, 2 per row on medium screens)
+
+        # Responsive Skill Cards (Centered)
         dbc.Row([
             dbc.Col([
                 devops_mlops,
                 monitoring,
                 data_processing,
-            ], lg=4, xs=6, className="col-xxs-12"),
+            ], lg=4, xs=6, className="d-flex flex-column col-xxs-12"),
             dbc.Col([
                 languages,
                 machine_learning,
                 big_data,
-            ], lg=4, xs=6, className="col-xxs-12"),
+            ], lg=4, xs=6, className="d-flex flex-column col-xxs-12"),
             dbc.Col([
                 database,
                 data_viz,
-            ], lg=4, xs=6, className="col-xxs-12"),
-        ])
-    ])
+            ], lg=4, xs=6, className="d-flex flex-column col-xxs-12"),
+        ],
+        style={"max-width": CONFIG['max-width']},
+        className="w-100 d-flex justify-content-center"),
+    ], width=12, className="d-flex flex-column align-items-center")
 ], 
 style={
     "padding-left": CONFIG['padding-left'],
     "padding-right": CONFIG['padding-right'],
     "padding-top": "40px",
     "padding-bottom": "20px",
+    "background": "linear-gradient(to right, #f1ccf9, #cce4f9)",
     "display": "flex",
     "align-items": "center",
     "justify-content": "center",
-    "flex-wrap": "wrap",
-    "max-width": CONFIG['max-width'],
-    "margin": "0 auto",
 })
 

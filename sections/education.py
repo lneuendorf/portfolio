@@ -14,7 +14,7 @@ education = dbc.Row([
             "margin": "0 auto",
             "padding-bottom": "25px",
         },
-        className="text-md-start text-dark text-center text-sm-center"
+        className="text-dark text-center"
     ),
 
     # Divider Line
@@ -111,7 +111,7 @@ style={
     "padding-right": CONFIG['padding-right'],
     "padding-top": "40px",
     "padding-bottom": "20px",
-    "background-color": "#bff0b7",  # Green background
+    "background": "linear-gradient(to right, #ccd7f9, #ccf9e3)",  # Horizontal color fade
     "color": "black",
     "justify-content": "center",
     "align-items": "center",
