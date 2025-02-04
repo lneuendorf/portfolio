@@ -29,6 +29,14 @@ footer = html.Div(
                                     className="text-light"
                                 )
                             ),
+                        ],
+                        className="d-flex justify-content-center",
+                    ),
+                    width=12,
+                ),
+                dbc.Col(
+                    dbc.Nav(
+                        children=[
                             dbc.NavItem(
                                 dbc.NavLink(
                                     "lneuendorf@proton.me", className="text-light"
@@ -54,17 +62,6 @@ footer = html.Div(
                             "Made with ",
                             html.A("Dash Plotly", href="https://dash.plotly.com/", className="text-light", target="_blank"),
                         ],
-                        className="text-center text-light",
-                    ),
-                    width=12,
-                ),
-            ],
-        ),
-        dbc.Row(
-            children=[
-                dbc.Col(
-                    html.P(
-                        "© 2025 Luke Neuendorf. All Rights Reserved.",
                         className="text-center text-light",
                     ),
                     width=12,
