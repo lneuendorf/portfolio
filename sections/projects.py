@@ -542,12 +542,12 @@ projects = dbc.Row([
             nfl_bdb_2025,
             nfl_bdb_2024,
             low_resource_machine_translation
-        ], sm=12, md=6, xl=6, className=""),
+        ], sm=12, md=6, xl=6, className="px-2"),
         dbc.Col([
             saguage,
             ffcrystalball,
             octoberodds
-        ], sm=12, md=6, xl=6, className="") 
+        ], sm=12, md=6, xl=6, className="px-2") 
     ], style={
         "max-width": CONFIG['max-width'],
         # padding below

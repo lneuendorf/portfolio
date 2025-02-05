@@ -1,6 +1,6 @@
 /* Default body gradient */
 body {
-    background: linear-gradient(to right, #9ae7eb, #bff0b7);
+    background: linear-gradient(to right, #d6f3ff, #edd6ff);
 }
 
 /* Define a CSS variable for text color */
@@ -27,7 +27,7 @@ html, body {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 430px) {
     .col-xxs-12 {
         flex: 0 0 100%;
         max-width: 100%;

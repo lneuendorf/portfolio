@@ -62,7 +62,8 @@ def create_skill_badges(skills):
 
 languages = dbc.Card([
     dbc.CardBody([
-        html.H5("Programming Languages", className="text-dark text-center"),
+        html.H5("Programming Languages", className="text-dark text-center", style={"margin-bottom": "10px"}),
+        html.Hr(style={"border-top": "2px solid grey", "width": "95%", "max-width": CONFIG['max-width'], "margin": "0 auto", "margin-bottom": "10px"}),
         create_skill_badges(["Python", "SQL", "Java", "C", "C++", "R", "Matlab"])
     ], style={"padding": "10px 10px 20px 10px"})
 ], className="shadow-sm rounded-3 mb-3")
@@ -70,42 +71,48 @@ languages = dbc.Card([
 
 machine_learning = dbc.Card([
     dbc.CardBody([
-        html.H5("Machine Learning", className="text-dark text-center"),
+        html.H5("Machine Learning", className="text-dark text-center", style={"margin-bottom": "10px"}),
+        html.Hr(style={"border-top": "2px solid grey", "width": "95%", "max-width": CONFIG['max-width'], "margin": "0 auto", "margin-bottom": "10px"}),
         create_skill_badges(["Scikit-learn", "XGBoost", "PYMC", "PyTorch", "TensorFlow"])
     ], style={"padding": "10px 10px 20px 10px"})
 ], className="shadow-sm rounded-3 mb-3")
 
 big_data = dbc.Card([
     dbc.CardBody([
-        html.H5("Big Data", className="text-dark text-center"),
+        html.H5("Big Data", className="text-dark text-center", style={"margin-bottom": "10px"}),
+        html.Hr(style={"border-top": "2px solid grey", "width": "95%", "max-width": CONFIG['max-width'], "margin": "0 auto", "margin-bottom": "10px"}),
         create_skill_badges(["Dask","Kafka","Apache Spark"])
     ], style={"padding": "10px 10px 20px 10px"})
 ], className="shadow-sm rounded-3 mb-3")
 
 data_viz = dbc.Card([
     dbc.CardBody([
-        html.H5("Data Visualization", className="text-dark text-center"),
+        html.H5("Data Visualization", className="text-dark text-center", style={"margin-bottom": "10px"}),
+        html.Hr(style={"border-top": "2px solid grey", "width": "95%", "max-width": CONFIG['max-width'], "margin": "0 auto", "margin-bottom": "10px"}),
         create_skill_badges(["Dash Plotly", "PowerBI", "Tableau", "Matplotlib", "Seaborn"])
     ], style={"padding": "10px 10px 20px 10px"})
 ], className="shadow-sm rounded-3 mb-3")
 
 database = dbc.Card([
     dbc.CardBody([
-        html.H5("Database", className="text-dark text-center"),
+        html.H5("Database", className="text-dark text-center", style={"margin-bottom": "10px"}),
+        html.Hr(style={"border-top": "2px solid grey", "width": "95%", "max-width": CONFIG['max-width'], "margin": "0 auto", "margin-bottom": "10px"}),
         create_skill_badges(["Snowflake", "SQL Developer", "Redis", "SQLite"])
     ], style={"padding": "10px 10px 20px 10px"})
 ], className="shadow-sm rounded-3 mb-3")
 
 devops_mlops = dbc.Card([
     dbc.CardBody([
-        html.H5("DevOps & MLOps", className="text-dark text-center"),
+        html.H5("DevOps & MLOps", className="text-dark text-center", style={"margin-bottom": "10px"}),
+        html.Hr(style={"border-top": "2px solid grey", "width": "95%", "max-width": CONFIG['max-width'], "margin": "0 auto", "margin-bottom": "10px"}),
         create_skill_badges(["Docker", "Kubernetes", "OpenShift", "MLflow"])
     ], style={"padding": "10px 10px 20px 10px"})
 ], className="shadow-sm rounded-3 mb-3")
 
 monitoring = dbc.Card([
     dbc.CardBody([
-        html.H5("Monitoring & Incident Response", className="text-dark text-center"),
+        html.H5("Monitoring & Incident Response", className="text-dark text-center", style={"margin-bottom": "10px"}),
+        html.Hr(style={"border-top": "2px solid grey", "width": "95%", "max-width": CONFIG['max-width'], "margin": "0 auto", "margin-bottom": "10px"}),
         create_skill_badges(["PagerDuty", "Dynatrace", "Kibana"])
     ], style={"padding": "10px 10px 20px 10px"})
 ], className="shadow-sm rounded-3 mb-3")
@@ -113,10 +120,18 @@ monitoring = dbc.Card([
 # Skill Category Cards
 data_processing = dbc.Card([
     dbc.CardBody([
-        html.H5("Data Processing & Scientific Computing", className="text-dark text-center"),
+        html.H5("Data Processing & Scientific Computing", className="text-dark text-center", style={"margin-bottom": "10px"}),
+        html.Hr(style={"border-top": "2px solid grey", "width": "95%", "max-width": CONFIG['max-width'], "margin": "0 auto", "margin-bottom": "10px"}),
         create_skill_badges(["NumPy", "Pandas"])
     ], style={"padding": "10px 10px 20px 10px"})
 ], className="shadow-sm rounded-3 mb-3")
+
+# List of all skill categories
+skill_cards = [
+    languages, big_data, data_processing,
+    machine_learning, devops_mlops, monitoring,
+    database, data_viz
+]
 
 # Skills Section Layout
 skills = dbc.Row([
@@ -135,25 +150,12 @@ skills = dbc.Row([
         ),
         html.Hr(style={"border-top": "2px solid black", "width": "100%", "max-width": CONFIG['max-width']}),
 
-        # Responsive Skill Cards (Centered)
+        # Responsive Skill Cards (Auto-filled)
         dbc.Row([
-            dbc.Col([
-                devops_mlops,
-                monitoring,
-                data_processing,
-            ], lg=4, xs=6, className="d-flex flex-column col-xxs-12"),
-            dbc.Col([
-                languages,
-                machine_learning,
-                big_data,
-            ], lg=4, xs=6, className="d-flex flex-column col-xxs-12"),
-            dbc.Col([
-                database,
-                data_viz,
-            ], lg=4, xs=6, className="d-flex flex-column col-xxs-12"),
+            dbc.Col(skill, lg=4, xs=6, className="d-flex flex-column px-2 col-xxs-12") for skill in skill_cards
         ],
         style={"max-width": CONFIG['max-width']},
-        className="w-100 d-flex justify-content-center"),
+        className="w-100 d-flex justify-content-center flex-wrap"),
     ], width=12, className="d-flex flex-column align-items-center")
 ], 
 style={
@@ -166,4 +168,3 @@ style={
     "align-items": "center",
     "justify-content": "center",
 })
-

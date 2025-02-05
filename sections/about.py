@@ -40,9 +40,6 @@ about = (
                     "analytics-related side projects, but you can also find me playing disc golf, ultimate "
                     "frisbee, or watching the Packers."
                 ], style={"text-align": "justify"}),
-                html.P([
-                    "NOTE: This site is a work in progress."
-                ], style={"text-align": "justify", "font-style": "italic", "margin-top": "20px"}),
             ], className="text-left")
         ], sm=12, md=7, className="d-flex align-items-center justify-content-center"),
     ],
