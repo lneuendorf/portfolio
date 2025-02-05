@@ -28,7 +28,7 @@ experience = (
                     html.Img(
                         src="/assets/schneider-logo.png", 
                         className="img-fluid", 
-                        style={"max-width": "140px", "height": "auto", "margin-bottom": "20px"}
+                        style={"max-width": "180px", "height": "auto", "margin-bottom": "20px"}
                     )
                 ], sm=12, md=2, className="align-self-center", style={"text-align": "center"}),
 
@@ -73,7 +73,7 @@ experience = (
                     html.Img(
                         src="/assets/schneider-logo.png",
                         className="img-fluid", 
-                        style={"max-width": "140px", "height": "auto", "margin-bottom": "20px"}
+                        style={"max-width": "180px", "height": "auto", "margin-bottom": "20px"}
                     )
                 ], sm=12, md=2, className="align-self-center", style={"text-align": "center"}),
 
@@ -119,7 +119,7 @@ experience = (
                 html.Img(
                 src="/assets/uw-madison-logo.png", 
                 className="img-fluid", 
-                style={"max-width": "140px", "height": "auto", "margin-bottom": "20px"}
+                style={"max-width": "200px", "height": "auto", "margin-bottom": "20px"}
                 )
             ], sm=12, md=2, className="align-self-center", style={"text-align": "center"}),
 
@@ -148,7 +148,7 @@ experience = (
             style={"max-width": CONFIG['max-width']}, 
             className="w-100 justify-content-center align-items-center"),
         ], xs=12, sm=12, md=12, lg=12, xl=12,
-        className="d-flex align-items-center justify-content-center"),
+        className="d-flex align-items-top justify-content-center"),
 
         # Divider Line
         html.Div(style={"height": "10px"}),

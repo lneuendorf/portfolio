@@ -27,7 +27,7 @@ education = dbc.Row([
                 html.Img(
                     src="/assets/uw-madison-logo.png",
                     className="img-fluid",
-                    style={"max-width": "140px", "height": "auto", "margin-bottom": "20px"}
+                    style={"max-width": "200px", "height": "auto", "margin-bottom": "20px"}
                 )
             ], sm=12, md=2, className="align-self-center", style={"text-align": "center"}),
 
@@ -48,10 +48,13 @@ education = dbc.Row([
                     ),
                 ], className="text-light"),
                 
-                html.Ul([
-                    html.Li("Focus: Machine Learning & Data Science."),
-                    html.Li("Coursework: Machine Learning, Big Data Systems, Advanced NLP, Optimization, "
-                            "Digital Image Processing, Probability & Information Theory in ML."),
+                html.Div([
+                    html.B("Focus: "),
+                    "Machine Learning & Data Science",
+                    html.Br(),
+                    html.B("Coursework: "),
+                    "Machine Learning, Big Data Systems, Advanced NLP, Optimization, ",
+                    "Digital Image Processing, Probability & Information Theory in ML, Theoretical Foundations of Data Science",
                 ], className="text-dark"),
             ], sm=12, md=10),
         ],
@@ -71,7 +74,7 @@ education = dbc.Row([
                 html.Img(
                     src="/assets/uw-madison-logo.png",
                     className="img-fluid",
-                    style={"max-width": "140px", "height": "auto", "margin-bottom": "20px"}
+                    style={"max-width": "200px", "height": "auto", "margin-bottom": "20px"}
                 )
             ], sm=12, md=2, className="align-self-center", style={"text-align": "center"}),
 
@@ -92,13 +95,14 @@ education = dbc.Row([
                     ),
                 ], className="text-light"),
                 
-                html.Ul([
-                    html.Li("Activities: Data Science Club, Wisconsin Autonomous, Wisconsin Space Race"),
+                html.Div([
+                    html.B("Activities: "),
+                    "Data Science Club, Wisconsin Autonomous, Wisconsin Space Race"
                 ], className="text-dark"),
             ], sm=12, md=10),
         ],
         style={"max-width": CONFIG['max-width']},
-        className="w-100 justify-content-center align-items-center"),
+        className="w-100 justify-content-center align-items-top"),
     ], xs=12, sm=12, md=12, lg=12, xl=12,
     className="d-flex align-items-center justify-content-center"),
 
