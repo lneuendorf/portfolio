@@ -167,4 +167,5 @@ style={
     "display": "flex",
     "align-items": "center",
     "justify-content": "center",
-})
+},
+id="skills")

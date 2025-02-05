@@ -117,4 +117,6 @@ style={
     "align-items": "center",
     "margin": "0 auto",
     "border-radius": "10px",
-})
+},
+id="education"
+)

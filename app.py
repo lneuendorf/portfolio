@@ -20,12 +20,24 @@ app.title = 'Luke Neuendorf'
 
 app.layout = html.Div([
     navbar,
-    about,
-    experience,
-    education,
-    projects,
-    skills,
-    footer,
+    html.Section([
+        about,
+    ], id="about"),
+    html.Section([
+        experience,
+    ], id="experience"),
+    html.Section([
+        education,
+    ], id="education"),
+    html.Section([
+        projects,
+    ], id="projects"),
+    html.Section([
+        skills,
+    ], id="skills"),
+    html.Section([
+        footer,
+    ], id="footer"),
 ])
 
 register_callbacks(app)

@@ -59,5 +59,6 @@ about = (
         "flex-wrap": "wrap",
         "max-width": CONFIG['max-width'],
         "margin": "0 auto",
-    })
+    },
+    id="about",)
 )

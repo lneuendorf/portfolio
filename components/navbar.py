@@ -17,11 +17,11 @@ navbar = dbc.Navbar(
         dbc.Collapse(
             dbc.Nav(
                 [
-                    dbc.NavItem(dbc.NavLink("About", href="#about", external_link=True, className="text-dark")),
-                    dbc.NavItem(dbc.NavLink("Experience", href="#experience", external_link=True, className="text-dark")),
-                    dbc.NavItem(dbc.NavLink("Education", href="#education", external_link=True, className="text-dark")),
-                    dbc.NavItem(dbc.NavLink("Skills", href="#skills", external_link=True, className="text-dark")),
-                    dbc.NavItem(dbc.NavLink("Projects", href="#projects", external_link=True, className="text-dark")),
+                    dbc.NavItem(dbc.NavLink("About", href="#about", id="nav-about", external_link=True, className="text-dark")),
+                    dbc.NavItem(dbc.NavLink("Experience", href="#experience", id="nav-experience", external_link=True, className="text-dark")),
+                    dbc.NavItem(dbc.NavLink("Education", href="#education", id="nav-education", external_link=True, className="text-dark")),
+                    dbc.NavItem(dbc.NavLink("Projects", href="#projects", id="nav-projects", external_link=True, className="text-dark")),
+                    dbc.NavItem(dbc.NavLink("Skills", href="#skills", id="nav-skills", external_link=True, className="text-dark")),
                 ],
                 className="ms-auto", navbar=True
             ),

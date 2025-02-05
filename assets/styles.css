@@ -66,3 +66,50 @@ html {
         max-width: 100%;
     }
 }
+
+/* Custom Toggler (Hamburger Menu) Styling */
+.custom-toggler {
+    border-color: gray !important; /* Border color of the toggler */
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: none !important; /* Remove default Bootstrap toggler icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    position: relative;
+} 
+
+/* Custom hamburger menu lines */
+.custom-toggler .navbar-toggler-icon::before,
+.custom-toggler .navbar-toggler-icon::after,
+.custom-toggler .navbar-toggler-icon span {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: gray !important; /* Color of the lines */
+    position: absolute;
+    left: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-toggler .navbar-toggler-icon::before {
+    top: 5px;
+}
+
+.custom-toggler .navbar-toggler-icon::after {
+    bottom: 5px;
+}
+
+.custom-toggler .navbar-toggler-icon span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Add offset for scroll position to account for the navbar height */
+section {
+    scroll-margin-top: 64px;  /* Adjust the value to match the height of your navbar */
+}
