@@ -5,6 +5,7 @@ from config.config import CONFIG
 
 about = (
     dbc.Row([
+        # Video Column
         dbc.Col([
             html.Div([
                 html.Video(
@@ -15,15 +16,17 @@ about = (
                         "max-width": "400px",
                         "object-fit": "cover",
                         "transform": "scale(1.5)",
-                        "padding-top": "20px",
+                        "padding-top": "70px",  # Reduced from 70px to 40px
                     },
                     loop=True,
                     autoPlay=True,
                     muted=True,
                     controls=False,
                 )
-            ], className="d-flex justify-content-center")
-        ], sm=12, md=5, className="d-flex justify-content-center"),
+            ], className="d-flex justify-content-center"),
+        ], sm=12, md=5, className="d-flex align-items-end align-items-md-center justify-content-center mb-3 mb-md-0"),  # Added spacing for small screens
+
+        # Text Column
         dbc.Col([
             html.Div([
                 html.P(
@@ -40,8 +43,9 @@ about = (
                     "analytics-related side projects, but you can also find me playing disc golf, ultimate "
                     "frisbee, or watching the Packers."
                 ], style={"text-align": "justify"}),
-            ], className="text-left")
-        ], sm=12, md=7, className="d-flex align-items-center justify-content-center"),
+            ], className="text-left"),
+        ], sm=12, md=7, className="d-flex align-items-start align-items-md-center justify-content-center"),  
+        # align-items-start on small screens, align-items-center on medium+
     ],
     style={
         "min-height": "calc(100vh)",
