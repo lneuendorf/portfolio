@@ -1,6 +1,9 @@
 /* Default body gradient */
 body {
     background: linear-gradient(to right, #d6f3ff, #edd6ff);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the entire body fills the viewport */
 }
 
 /* Define a CSS variable for text color */
@@ -21,12 +24,42 @@ html, body {
     overflow-x: hidden;
 }
 
+/* Ensure that the main content expands to push footer down */
+#content {
+    flex: 1; /* Pushes the footer to the bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Keep footer at the bottom */
+#footer {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+/* Prevent scrolling below footer */
+body::after {
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+/* Fix extra spacing issue */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Adjust text size for small screens */
 @media (max-width: 767px) {  /* Apply only on sm screens */
     .date-text {
         font-size: 0.9rem;  /* Adjust size as needed */
     }
 }
 
+/* Custom extra-small breakpoint */
 @media (max-width: 430px) {
     .col-xxs-12 {
         flex: 0 0 100%;
