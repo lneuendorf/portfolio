@@ -31,18 +31,18 @@ about = (
             html.Div([
                 html.P(
                     "Hi 👋, my name is", 
-                    style={"font-size": "18px", "margin-bottom": "5px"}
+                    style={"font-size": "18px", "margin-bottom": "5px", "color": CONFIG['text-dark']}
                 ),
                 html.H1(
                     "Luke", 
-                    style={"font-size": "36px", "margin-bottom": "10px"}
+                    style={"font-size": "36px", "margin-bottom": "10px", "color": CONFIG['text-dark']}
                 ),
                 html.P([
                     "I am a Green Bay-based Data Engineer with a background in Computer Engineering "
                     "and Machine Learning. I enjoy spending my free time on sports "
                     "analytics-related side projects, but you can also find me playing disc golf, ultimate "
                     "frisbee, or watching the Packers."
-                ], style={"text-align": "justify"}),
+                ], style={"text-align": "justify", "color": CONFIG['text-dark']}),
             ], className="text-left"),
         ], sm=12, md=7, className="d-flex align-items-start align-items-md-center justify-content-center"),  
         # align-items-start on small screens, align-items-center on medium+

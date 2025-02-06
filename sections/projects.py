@@ -20,7 +20,7 @@ nfl_bdb_2025 = (
                     children=[
                         html.A(
                             children=[
-                                html.H3("Motion for More", className="text-dark"),
+                                html.H3("Motion for More", style={"color": CONFIG['text-dark']}),
                             ],
                             style={
                                 "color": "black",
@@ -29,20 +29,25 @@ nfl_bdb_2025 = (
                             },
                         ),
                         html.P([
-                            "Analyzed the impact of pre-snap motion on rushing success in the NFL "
-                            "using Bayesian regression, identifying which motion types and run "
-                            "concepts maximize yards per carry. This project received an honorable "
-                            "mention in the ",
+                            "Used Bayesian regression to analyze the impact of pre-snap motion on ",
+                            "rushing success in the NFL, identifying the motion types and run concepts ",
+                            "that maximize yards per carry (YPC). Notably, pre-snap Jet motion ",
+                            "increased YPC by an average of 0.55 ",
+                            "compared to the same play without ",
+                            "it, provided the ball carrier was not the motion player. This project ",
+                            "earned an ",
+                            html.B("honorable mention"),
+                            " in the ",
                             html.A(
                                 "2025 NFL Big Data Bowl",
                                 href="https://operations.nfl.com/gameday/analytics/big-data-bowl/2025-big-data-bowl-finalists/",
                                 target="_blank",
-                                style={"color":"#2a2929","text-decoration": "underline"}
+                                style={"color":CONFIG['text-dark'],"text-decoration": "underline"}
                             ),
                             "."
                         ],
-                        className="text-dark",
                         style={
+                            "color": CONFIG['text-dark'],
                             "text-align": "justify",
                             "margin": "10px 0 0 0",
                             "flex-grow": "1",  # Allows this section to expand to equal height
@@ -91,7 +96,7 @@ nfl_bdb_2025 = (
             style={
                 "border-radius": "15px",
                 "overflow": "hidden",
-                "box-shadow": "2px 2px 10px rgba(0, 0, 0, 0.1)",
+                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                 "width": "100%",
                 # "max-width": "400px",
                 "border": "2px solid black",
@@ -120,7 +125,7 @@ nfl_bdb_2024 = (
                     children=[
                         html.A(
                             children=[
-                                html.H3("TDOE (Tackle Depth Over Expectation)", className="text-dark"),
+                                html.H3("TDOE (Tackle Depth Over Expectation)", style={"color": CONFIG['text-dark']}),
                             ],
                             style={
                                 "color": "black",
@@ -136,8 +141,8 @@ nfl_bdb_2024 = (
                             "and providing a more contextualized measure of tackling performance beyond traditional "
                             "counting stats."
                         ],
-                        className="text-dark",
                         style={
+                            "color": CONFIG['text-dark'],
                             "text-align": "justify",
                             "margin": "10px 0 0 0",
                         }),
@@ -178,7 +183,7 @@ nfl_bdb_2024 = (
             style={
                 "border-radius": "15px",
                 "overflow": "hidden",
-                "box-shadow": "2px 2px 10px rgba(0, 0, 0, 0.1)",
+                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                 "width": "100%",
                 # "max-width": "400px",
                 "border": "2px solid black",
@@ -207,7 +212,7 @@ low_resource_machine_translation = (
                     children=[
                         html.A(
                             children=[
-                                html.H3("Low-Resource Machine Translation Research", className="text-dark"),
+                                html.H3("Low-Resource Machine Translation Research", style={"color": CONFIG['text-dark']}),
                             ],
                             style={
                                 "color": "black",
@@ -231,8 +236,8 @@ low_resource_machine_translation = (
                             html.B("11.4 BLEU"),
                             ", highlighting its limitations in data-constrained environments.",
                         ],
-                        className="text-dark",
                         style={
+                            "color": CONFIG['text-dark'],
                             "text-align": "justify",
                             "margin": "10px 0 0 0",
                         }),
@@ -268,7 +273,7 @@ low_resource_machine_translation = (
             style={
                 "border-radius": "15px",
                 "overflow": "hidden",
-                "box-shadow": "2px 2px 10px rgba(0, 0, 0, 0.1)",
+                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                 "width": "100%",
                 # "max-width": "400px",
                 "border": "2px solid black",
@@ -297,7 +302,7 @@ saguage = (
                     children=[
                         html.A(
                             children=[
-                                html.H3("Sanguage", className="text-dark"),
+                                html.H3("Sanguage", style={"color": CONFIG['text-dark']}),
                             ],
                             style={
                                 "color": "black",
@@ -317,8 +322,8 @@ saguage = (
                             ". While this prototype focuses on Alphabetical letters, it demonstrates the potential ",
                             "for a larger-scale system that could enable real-time ASL translation for seamless communication."
                         ],
-                        className="text-dark",
                         style={
+                            "color": CONFIG['text-dark'],
                             "text-align": "justify",
                             "margin": "10px 0 0 0",
                         }),
@@ -349,7 +354,7 @@ saguage = (
             style={
                 "border-radius": "15px",
                 "overflow": "hidden",
-                "box-shadow": "2px 2px 10px rgba(0, 0, 0, 0.1)",
+                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                 "width": "100%",
                 # "max-width": "400px",
                 "border": "2px solid black",
@@ -378,7 +383,7 @@ ffcrystalball = (
                     children=[
                         html.A(
                             children=[
-                                html.H3("Fantasy Football Crystal Ball", className="text-dark"),
+                                html.H3("Fantasy Football Crystal Ball", style={"color": CONFIG['text-dark']}),
                             ],
                             style={
                                 "color": "black",
@@ -398,8 +403,8 @@ ffcrystalball = (
                             html.B("15%"),
                             " compared to a baseline linear regression model, providing more accurate player performance projections."
                         ],
-                        className="text-dark",
                         style={
+                            "color": CONFIG['text-dark'],
                             "text-align": "justify",
                             "margin": "10px 0 0 0",
                         }),
@@ -430,7 +435,7 @@ ffcrystalball = (
             style={
                 "border-radius": "15px",
                 "overflow": "hidden",
-                "box-shadow": "2px 2px 10px rgba(0, 0, 0, 0.1)",
+                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                 "width": "100%",
                 # "max-width": "400px",
                 "border": "2px solid black",
@@ -459,7 +464,7 @@ octoberodds = (
                     children=[
                         html.A(
                             children=[
-                                html.H3("October Odds", className="text-dark"),
+                                html.H3("October Odds", style={"color": CONFIG['text-dark']}),
                             ],
                             style={
                                 "color": "black",
@@ -478,8 +483,8 @@ octoberodds = (
                             html.B("World Series winner odds"),
                             " based on simulated season outcomes."
                         ],
-                        className="text-dark",
                         style={
+                            "color": CONFIG['text-dark'],
                             "text-align": "justify",
                             "margin": "10px 0 0 0",
                         }),
@@ -510,7 +515,7 @@ octoberodds = (
             style={
                 "border-radius": "15px",
                 "overflow": "hidden",
-                "box-shadow": "2px 2px 10px rgba(0, 0, 0, 0.1)",
+                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                 "width": "100%",
                 # "max-width": "400px",
                 "border": "2px solid black",
@@ -527,32 +532,74 @@ projects = dbc.Row([
         "Projects",
         style={
             "margin-bottom": "30px",
-            "font-size": "32px",
+            "font-size": "36px",  # Default font size for xs screens
             "font-weight": "bold",
             "max-width": CONFIG['max-width'],
             "margin": "0 auto",
             "padding-bottom": "20px",
+            "color": CONFIG['text-dark'],
         },
-        className="text-center"
+        className="text-center d-none d-sm-block"  # Hide on xs screens
     ),
-    html.Hr(style={"border-top": "2px solid white", "width": "100%", "max-width": CONFIG['max-width']}),
+    html.H2(
+        "Projects",
+        style={
+            "margin-bottom": "30px",
+            "font-size": "32px",  # Font size for sm screens and larger
+            "font-weight": "bold",
+            "max-width": CONFIG['max-width'],
+            "margin": "0 auto",
+            "padding-bottom": "20px",
+            "color": CONFIG['text-dark'],
+        },
+        className="text-center d-block d-sm-none"  # Show only on xs screens
+    ),
+    html.Hr(style={"border-top": f"2px solid {CONFIG['text-dark']}", "width": "100%", "max-width": CONFIG['max-width']}),
 
     dbc.Row([
-        dbc.Col([
+        dbc.Col(
             nfl_bdb_2025,
+            sm=12, md=6, xl=6,
+            className="px-2",
+            style={"order": 1}  # First in order on small screens
+        ),
+        dbc.Col(
             nfl_bdb_2024,
-            low_resource_machine_translation
-        ], sm=12, md=6, xl=6, className="px-2"),
-        dbc.Col([
+            sm=12, md=6, xl=6,
+            className="px-2",
+            style={"order": 2}  # Second in order on small screens
+        ),
+        dbc.Col(
+            low_resource_machine_translation,
+            sm=12, md=6, xl=6,
+            className="px-2",
+            style={"order": 3}  # Third in order on small screens
+        ),
+        dbc.Col(
             saguage,
+            sm=12, md=6, xl=6,
+            className="px-2",
+            style={"order": 4}  # Fourth in order on small screens
+        ),
+        dbc.Col(
             ffcrystalball,
-            octoberodds
-        ], sm=12, md=6, xl=6, className="px-2") 
+            sm=12, md=6, xl=6,
+            className="px-2",
+            style={"order": 5}  # Fifth in order on small screens
+        ),
+        dbc.Col(
+            octoberodds,
+            sm=12, md=6, xl=6,
+            className="px-2",
+            style={"order": 6}  # Sixth in order on small screens
+        ),
     ], style={
         "max-width": CONFIG['max-width'],
-        # padding below
-        "padding": "10px 10px 30px 10px"
+        "padding": "10px 10px 30px 10px",
+        "display": "flex",  # Ensures flexbox behavior for `order`
+        "flex-wrap": "wrap",  # Allows wrapping of tiles on small screens
     })
+
 ], 
 justify="center", 
 className="d-flex flex-wrap", 
@@ -560,9 +607,8 @@ style={
     "padding-left": CONFIG["padding-left"],
     "padding-right": CONFIG["padding-left"],
     "padding-top": "40px",
-    "background-color": "#333333",
-    "color": "white",
-    "border-radius": "10px",
+    "background-color": "white",
+    "margin": "0 auto",
 },
 id="projects"
 )

@@ -5,7 +5,6 @@ footer = html.Div(
     children=[
         dbc.Row(
             children=[
-                # Social Links (GitHub, Bluesky, LinkedIn)
                 dbc.Col(
                     dbc.Nav(
                         children=[
@@ -78,6 +77,7 @@ footer = html.Div(
             className="d-flex flex-wrap justify-content-center align-items-center",
         ),
     ],
-    className="bg-dark text-light py-1",
+    style={"backgroundColor": "#242424"},
+    className="text-light py-1",
     id="footer",
 )

@@ -6,14 +6,8 @@ body {
     min-height: 100vh; /* Ensures the entire body fills the viewport */
 }
 
-/* Define a CSS variable for text color */
-:root {
-    --text-color: #404747;  /* Change this value to change the text color globally */
-}
-
-/* Apply the variable to the text color */
-body, .text-dark, .navbar-brand, .navbar-toggler-icon span, .navbar-nav .nav-link {
-    color: var(--text-color) !important;
+body .navbar {
+    background-color: #242424 !important; /* Replace with your desired color */
 }
 
 /* Ensure no overflow beyond the viewport */
@@ -69,7 +63,7 @@ html {
 
 /* Custom Toggler (Hamburger Menu) Styling */
 .custom-toggler {
-    border-color: gray !important; /* Border color of the toggler */
+    border-color: white !important; /* Border color of the toggler */
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -90,7 +84,7 @@ html {
     display: block;
     width: 22px;
     height: 2px;
-    background-color: gray !important; /* Color of the lines */
+    background-color: white !important; /* Color of the lines */
     position: absolute;
     left: 1px;
     transition: all 0.3s ease-in-out;
@@ -111,5 +105,5 @@ html {
 
 /* Add offset for scroll position to account for the navbar height */
 section {
-    scroll-margin-top: 64px;  /* Adjust the value to match the height of your navbar */
+    scroll-margin-top: 61px;  /* Adjust the value to match the height of your navbar */
 }
