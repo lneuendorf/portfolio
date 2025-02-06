@@ -415,7 +415,7 @@ ffcrystalball = (
                                         src="/assets/github-logo-full.png",
                                         style={"height": "20px", "width": "auto", "align": "center"},
                                     ),
-                                    href="https://github.com/maladinp/ECE454FinalProject",
+                                    href="https://github.com/lneuendorf/ffcrystalball",
                                     target="_blank",
                                     color="dark",
                                     className="m-1 px-1 py-1",
