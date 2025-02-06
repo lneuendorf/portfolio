@@ -3,6 +3,11 @@ from dash import html
 
 navbar = dbc.Navbar(
     dbc.Container([
+        # dbc.NavbarBrand(
+        #     "Luke Neuendorf", 
+        #     className="ms-2 fw-bold text-light", 
+        #     style={"fontSize": "30px"}
+        # ),
         dbc.NavbarBrand(
             html.Img(src="/assets/navbar/signature.png", height="35px"),
             className="ms-2 fw-bold text-light"

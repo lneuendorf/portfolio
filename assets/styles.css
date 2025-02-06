@@ -1,6 +1,6 @@
 /* Default body gradient */
 body {
-    background: linear-gradient(to right, #d6f3ff, #edd6ff);
+    background: linear-gradient(to right, #a6e5f2, #a6f2da);
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensures the entire body fills the viewport */
