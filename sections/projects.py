@@ -13,7 +13,7 @@ nfl_bdb_2025 = (
                     style={
                         "width": "100%",
                         "height": "auto",
-                        "border-bottom": "2px solid black",
+                        # "border-bottom": "2px solid white",
                     },
                 ),
                 html.Div(
@@ -99,7 +99,7 @@ nfl_bdb_2025 = (
                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                 "width": "100%",
                 # "max-width": "400px",
-                "border": "2px solid black",
+                "border": "2px solid white",
                 "display": "flex",
                 "flex-direction": "column",
                 "height": "100%",
@@ -117,7 +117,7 @@ nfl_bdb_2024 = (
                     style={
                         "width": "100%",
                         "height": "auto",
-                        "border-bottom": "2px solid black",
+                        # "border-bottom": "2px solid white",
                     },
                 ),
 
@@ -186,7 +186,7 @@ nfl_bdb_2024 = (
                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                 "width": "100%",
                 # "max-width": "400px",
-                "border": "2px solid black",
+                "border": "2px solid white",
                 "display": "flex",
                 "flex-direction": "column",
                 "height": "100%",
@@ -204,7 +204,7 @@ low_resource_machine_translation = (
                     style={
                         "width": "100%",
                         "height": "auto",
-                        "border-bottom": "2px solid black",
+                        # "border-bottom": "2px solid white",
                     },
                 ),
 
@@ -276,7 +276,7 @@ low_resource_machine_translation = (
                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                 "width": "100%",
                 # "max-width": "400px",
-                "border": "2px solid black",
+                "border": "2px solid white",
                 "display": "flex",
                 "flex-direction": "column",
                 "height": "100%",
@@ -294,7 +294,7 @@ saguage = (
                     style={
                         "width": "100%",
                         "height": "auto",
-                        "border-bottom": "2px solid black",
+                        # "border-bottom": "2px solid white",
                     },
                 ),
 
@@ -357,7 +357,7 @@ saguage = (
                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                 "width": "100%",
                 # "max-width": "400px",
-                "border": "2px solid black",
+                "border": "2px solid white",
                 "display": "flex",
                 "flex-direction": "column",
                 "height": "100%",
@@ -375,7 +375,7 @@ ffcrystalball = (
                     style={
                         "width": "100%",
                         "height": "auto",
-                        "border-bottom": "2px solid black",
+                        # "border-bottom": "2px solid white",
                     },
                 ),
 
@@ -438,7 +438,7 @@ ffcrystalball = (
                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                 "width": "100%",
                 # "max-width": "400px",
-                "border": "2px solid black",
+                "border": "2px solid white",
                 "display": "flex",
                 "flex-direction": "column",
                 "height": "100%",
@@ -456,7 +456,7 @@ octoberodds = (
                     style={
                         "width": "100%",
                         "height": "auto",
-                        "border-bottom": "2px solid black",
+                        # "border-bottom": "2px solid white",
                     },
                 ),
 
@@ -518,7 +518,7 @@ octoberodds = (
                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                 "width": "100%",
                 # "max-width": "400px",
-                "border": "2px solid black",
+                "border": "2px solid white",
                 "display": "flex",
                 "flex-direction": "column",
                 "height": "100%",
@@ -557,41 +557,21 @@ projects = dbc.Row([
     html.Hr(style={"border-top": f"2px solid {CONFIG['text-dark']}", "width": "100%", "max-width": CONFIG['max-width']}),
 
     dbc.Row([
-        dbc.Col(
-            nfl_bdb_2025,
+        dbc.Col([
+                nfl_bdb_2025,
+                low_resource_machine_translation,
+                ffcrystalball
+            ],
             sm=12, md=6, xl=6,
             className="px-2",
-            style={"order": 1}  # First in order on small screens
         ),
-        dbc.Col(
-            nfl_bdb_2024,
+        dbc.Col([
+                nfl_bdb_2024,
+                saguage,
+                octoberodds
+            ],
             sm=12, md=6, xl=6,
             className="px-2",
-            style={"order": 2}  # Second in order on small screens
-        ),
-        dbc.Col(
-            low_resource_machine_translation,
-            sm=12, md=6, xl=6,
-            className="px-2",
-            style={"order": 3}  # Third in order on small screens
-        ),
-        dbc.Col(
-            saguage,
-            sm=12, md=6, xl=6,
-            className="px-2",
-            style={"order": 4}  # Fourth in order on small screens
-        ),
-        dbc.Col(
-            ffcrystalball,
-            sm=12, md=6, xl=6,
-            className="px-2",
-            style={"order": 5}  # Fifth in order on small screens
-        ),
-        dbc.Col(
-            octoberodds,
-            sm=12, md=6, xl=6,
-            className="px-2",
-            style={"order": 6}  # Sixth in order on small screens
         ),
     ], style={
         "max-width": CONFIG['max-width'],

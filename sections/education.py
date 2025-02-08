@@ -30,8 +30,7 @@ masters = (
                     style={
                         "width": "100%",
                         "height": "150px",
-                        "background": "linear-gradient(to bottom, #C5050C, #c4676a)",
-                        "border-bottom": "2px solid black",
+                        "background": "linear-gradient(to bottom, #C5050C, #f1f1ee)",
                     },
                 ),
                 html.Div(
@@ -66,15 +65,18 @@ masters = (
                                 html.Li([
                                     html.B("Coursework: ", style={"color": CONFIG['text-dark']}), 
                                     html.Span(
-                                        "Machine Learning, Big Data Systems, Advanced NLP, Optimization,"
+                                        "Machine Learning, Big Data Systems, Advanced NLP, Optimization, "
                                         "Digital Image Processing, Probability & Information Theory in ML, "
                                         "Theoretical Foundations of Data Science",
                                         style={
                                             "color": CONFIG['text-dark'],
-                                            "text-align": "justify",
                                         }
                                     ),
-                                ]),
+                                ],
+                                style={
+                                    # "text-align": "justify",
+                                    "padding-right": "10px",
+                                }),
                             ], className="text-start text-dark"),
                         ]),
                     ],
@@ -91,7 +93,7 @@ masters = (
                 "overflow": "hidden",
                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",  # Glow effect
                 "width": "100%",
-                "border": "2px solid black",
+                "border": "2px solid white",
                 "display": "flex",
                 "flex-direction": "column",
                 "height": "100%",
@@ -127,8 +129,7 @@ bachelors = (
                     style={
                         "width": "100%",
                         "height": "150px",
-                        "background": "linear-gradient(to bottom, #C5050C, #c4676a)",
-                        "border-bottom": "2px solid black",
+                        "background": "linear-gradient(to bottom, #C5050C, #f1f1ee)",
                     },
                 ),
                 html.Div(
@@ -160,7 +161,10 @@ bachelors = (
                                         "Data Science Club, Wisconsin Autonomous, Wisconsin Space Race, Running Club",
                                         style={"color": CONFIG['text-dark']}
                                     ),
-                                ]),
+                                ],style={
+                                    # "text-align": "justify",
+                                    "padding-right": "10px",
+                                }),
                             ], className="text-start text-dark"),
                         ]),
                     ],
@@ -177,7 +181,7 @@ bachelors = (
                 "overflow": "hidden",
                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                 "width": "100%",
-                "border": "2px solid black",
+                "border": "2px solid white",
                 "display": "flex",
                 "flex-direction": "column",
                 "height": "100%",
