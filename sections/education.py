@@ -239,7 +239,7 @@ style={
     "padding-right": CONFIG["padding-left"],
     "padding-top": "40px",
     "background": "white",
-    # "margin": "0 auto",
+    "margin": "0 auto",
 },
 id="projects"
 )
