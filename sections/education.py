@@ -228,8 +228,7 @@ education = dbc.Row([
         ], sm=12, md=6, xl=6, className="px-2") 
     ], style={
         "max-width": CONFIG['max-width'],
-        # padding below
-        "padding": "10px 10px 30px 10px"
+        "padding": "0px 0px 30px 0px",
     })
 ], 
 justify="center", 

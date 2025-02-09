@@ -575,7 +575,7 @@ projects = dbc.Row([
         ),
     ], style={
         "max-width": CONFIG['max-width'],
-        "padding": "10px 10px 30px 10px",
+        "padding": "0px 0px 30px 0px",
         "display": "flex",  # Ensures flexbox behavior for `order`
         "flex-wrap": "wrap",  # Allows wrapping of tiles on small screens
     })
