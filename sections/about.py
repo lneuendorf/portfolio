@@ -5,42 +5,25 @@ from config.config import CONFIG
 
 about = (
     dbc.Row([
-        # Video Column
         dbc.Col([
             html.Div([
-                html.Img(
-                    src="/assets/headshot.png", 
+                html.Video(
+                    src="/assets/memoji.mov", 
                     className="img-fluid",
                     style={
                         "width": "100%",
                         "max-width": "400px",
                         "object-fit": "cover",
-                        # "padding-top": "70px",  # Reduced from 70px to 40px
-                        "border-radius": "15px",  # Rounded corners
-                        "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
+                        "transform": "scale(1.5)",
+                        "padding-top": "70px",  # Reduced from 70px to 40px
                     },
+                    loop=True,
+                    autoPlay=True,
+                    muted=True,
+                    controls=False,
                 )
             ], className="d-flex justify-content-center"),
         ], sm=12, md=5, className="d-flex align-items-end align-items-md-center justify-content-center mb-3 mb-md-0"),  # Added spacing for small screens
-        # dbc.Col([
-        #     html.Div([
-        #         html.Video(
-        #             src="/assets/memoji.mov", 
-        #             className="img-fluid",
-        #             style={
-        #                 "width": "100%",
-        #                 "max-width": "400px",
-        #                 "object-fit": "cover",
-        #                 "transform": "scale(1.5)",
-        #                 "padding-top": "70px",  # Reduced from 70px to 40px
-        #             },
-        #             loop=True,
-        #             autoPlay=True,
-        #             muted=True,
-        #             controls=False,
-        #         )
-        #     ], className="d-flex justify-content-center"),
-        # ], sm=12, md=5, className="d-flex align-items-end align-items-md-center justify-content-center mb-3 mb-md-0"),  # Added spacing for small screens
 
         # Text Column
         dbc.Col([
@@ -64,7 +47,7 @@ about = (
         # align-items-start on small screens, align-items-center on medium+
     ],
     style={
-        "min-height": "calc(100vh)",
+        "height": "100vh",
         "padding-left": CONFIG['padding-left'],
         "padding-right": CONFIG['padding-right'],
         "padding-top": "20px",
