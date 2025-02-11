@@ -11,3 +11,12 @@ def register_callbacks(app):
         if n_clicks:
             return not is_open
         return is_open
+    
+    @app.callback(
+        Output('video-player', 'play'),
+        Input('video-interval', 'n_intervals')
+    )
+    def play_video(n_intervals):
+        if n_intervals == 1:
+            return True
+        return False
