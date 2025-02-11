@@ -8,23 +8,39 @@ about = (
         # Video Column
         dbc.Col([
             html.Div([
-                html.Video(
-                    src="/assets/memoji.mov", 
+                html.Img(
+                    src="/assets/headshot.png", 
                     className="img-fluid",
                     style={
                         "width": "100%",
                         "max-width": "400px",
                         "object-fit": "cover",
-                        "transform": "scale(1.5)",
-                        "padding-top": "70px",  # Reduced from 70px to 40px
+                        # "padding-top": "70px",  # Reduced from 70px to 40px
+                        "border-radius": "15px",  # Rounded corners
+                        "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
                     },
-                    loop=True,
-                    autoPlay=True,
-                    muted=True,
-                    controls=False,
                 )
             ], className="d-flex justify-content-center"),
         ], sm=12, md=5, className="d-flex align-items-end align-items-md-center justify-content-center mb-3 mb-md-0"),  # Added spacing for small screens
+        # dbc.Col([
+        #     html.Div([
+        #         html.Video(
+        #             src="/assets/memoji.mov", 
+        #             className="img-fluid",
+        #             style={
+        #                 "width": "100%",
+        #                 "max-width": "400px",
+        #                 "object-fit": "cover",
+        #                 "transform": "scale(1.5)",
+        #                 "padding-top": "70px",  # Reduced from 70px to 40px
+        #             },
+        #             loop=True,
+        #             autoPlay=True,
+        #             muted=True,
+        #             controls=False,
+        #         )
+        #     ], className="d-flex justify-content-center"),
+        # ], sm=12, md=5, className="d-flex align-items-end align-items-md-center justify-content-center mb-3 mb-md-0"),  # Added spacing for small screens
 
         # Text Column
         dbc.Col([

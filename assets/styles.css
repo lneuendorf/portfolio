@@ -51,6 +51,9 @@ html {
     .date-text {
         font-size: 0.9rem;  /* Adjust size as needed */
     }
+    .date-text-large {
+        font-size: 1.0rem;  /* Adjust size as needed */
+    }
 }
 
 /* Custom extra-small breakpoint */
@@ -106,4 +109,28 @@ html {
 /* Add offset for scroll position to account for the navbar height */
 section {
     scroll-margin-top: 61px;  /* Adjust the value to match the height of your navbar */
+}
+
+/* Hide the wide timeline by default */
+.timeline-wide {
+    display: none;
+}
+
+/* Hide the narrow timeline by default */
+.timeline-narrow {
+    display: none;
+}
+
+/* Show the wide timeline on larger screens */
+@media (min-width: 768px) {
+    .timeline-wide {
+        display: block;
+    }
+}
+
+/* Show the narrow timeline on smaller screens */
+@media (max-width: 767px) {
+    .timeline-narrow {
+        display: block;
+    }
 }
