@@ -103,13 +103,14 @@ timeline_wide = html.Div(
                                 ], style={"padding-top": "5px"}),
                                 # Job description
                                 html.Ul([
-                                    html.Li("Developed a process-based model to classify late orders by cause, "
-                                            "deployed it to Azure Kubernetes Service, and automated reason tagging"
-                                            " of daily late orders."),
-                                    html.Li("Upgraded a legacy Java data pipeline for appointment scheduling "
-                                            "model to Python using VSCode, GitHub Copilot, and SQL."),
-                                    html.Li("Created APIs using Flask."),
-                                ], style={"color": CONFIG['text-dark'], "text-align": "justify"}),
+                                    html.Li("Built a process-based model to classify late orders, intersecting "
+                                            "weather polygons with location data. Deployed process on Anaconda Enterprise."),
+                                    html.Li("Refactored a 118-file Java data pipeline for appointment scheduling "
+                                            "into a streamlined 33-file Python solution using VSCode, GitHub "
+                                            "Copilot, Unit Testing, and SQL."),
+                                    html.Li("Completed several smaller projects, working with Snowflake, "
+                                            "cloud deployments, APIs, Azure ML, and more."),
+                                ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
                             ],
                         ),
                     ],
@@ -196,11 +197,11 @@ timeline_wide = html.Div(
                                     html.Li("Implemented image filtering pipeline to count semi-truck trailers "
                                             "in satellite images. Achieved 72% accuracy on test set."),
                                     html.Li("Developed an XGBoost model to predict the probability of direct "
-                                            "bookings on the Schneider freight app, bypassing brokers."),
-                                    html.Li("Created PowerBI and Tableau dashboards for 170+ associates, enhancing "
-                                            "driver training, customer resolutions, and staffing."),
-                                    html.Li("Automated data processes with Python and SQL."),
-                                ], style={"color": CONFIG['text-dark'], "text-align": "justify"}),
+                                            "bookings on the Schneider freight app."),
+                                    html.Li("Created PowerBI and Tableau dashboards for 170+ associates, assisting with "
+                                            "driver training, customer resolutions, and staffing estimates."),
+                                    html.Li("Automated ETL process with Python and SQL."),
+                                ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
                             ],
                         ),
                     ],
@@ -287,7 +288,7 @@ timeline_wide = html.Div(
                                    "Provided hands-on support to over 80 students, ensuring "
                                     "comprehension of circuit analysis concepts, and honing skills "
                                     "in communication, critical thinking, and instructional guidance."
-                                ], style={"color": CONFIG['text-dark'], "text-align": "justify"}),
+                                ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
                             ],
                         ),
                     ],
@@ -376,7 +377,7 @@ timeline_wide = html.Div(
                                     "fostering smooth cross-departmental collaboration among a 10-member team "
                                     "encompassing construction, finance, and engineering departments."
                                     # justify the text
-                                ], style={"color": CONFIG['text-dark'], "text-align": "justify"}),
+                                ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
                             ],
                         ),
                     ],
@@ -488,12 +489,13 @@ timeline_narrow = html.Div(
                                 ], style={"padding-top": "5px"}),
                                 # Job description
                                 html.Ul([
-                                    html.Li("Developed a process-based model to classify late orders by cause, "
-                                            "deployed it to Azure Kubernetes Service, and automated reason tagging"
-                                            " of daily late orders."),
-                                    html.Li("Upgraded a legacy Java data pipeline for appointment scheduling "
-                                            "model to Python using VSCode, GitHub Copilot, and SQL."),
-                                    html.Li("Created APIs using Flask."),
+                                    html.Li("Built a process-based model to classify late orders, intersecting "
+                                            "weather polygons with location data. Deployed process on Anaconda Enterprise."),
+                                    html.Li("Refactored a 118-file Java data pipeline for appointment scheduling "
+                                            "into a streamlined 33-file Python solution using VSCode, GitHub "
+                                            "Copilot, Unit Testing, and SQL."),
+                                    html.Li("Completed several smaller projects, working with Snowflake, "
+                                            "cloud deployments, APIs, Azure ML, and more."),
                                 ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
                             ],
                         ),
@@ -581,10 +583,10 @@ timeline_narrow = html.Div(
                                     html.Li("Implemented image filtering pipeline to count semi-truck trailers "
                                             "in satellite images. Achieved 72% accuracy on test set."),
                                     html.Li("Developed an XGBoost model to predict the probability of direct "
-                                            "bookings on the Schneider freight app, bypassing brokers."),
-                                    html.Li("Created PowerBI and Tableau dashboards for 170+ associates, enhancing "
-                                            "driver training, customer resolutions, and staffing."),
-                                    html.Li("Automated data processes with Python and SQL."),
+                                            "bookings on the Schneider freight app."),
+                                    html.Li("Created PowerBI and Tableau dashboards for 170+ associates, assisting with "
+                                            "driver training, customer resolutions, and staffing estimates."),
+                                    html.Li("Automated ETL process with Python and SQL."),
                                 ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
                             ],
                         ),

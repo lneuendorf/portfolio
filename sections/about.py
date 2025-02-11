@@ -39,8 +39,8 @@ about = (
                 html.P([
                     "I am a Green Bay-based Data Engineer with a background in Computer Engineering "
                     "and Machine Learning. I enjoy spending my free time on sports "
-                    "analytics-related side projects, but you can also find me playing disc golf, ultimate "
-                    "frisbee, or watching the Packers."
+                    "analytics-related side projects, but you can also find me playing disc golf and ultimate "
+                    "frisbee or watching Wisconsin sports teams."
                 ], style={"text-align": "justify", "color": CONFIG['text-dark']}),
             ], className="text-left"),
         ], sm=12, md=7, className="d-flex align-items-start align-items-md-center justify-content-center"),  

@@ -114,9 +114,10 @@ education_wide = html.Div(
                                         html.Br(),
                                         html.B("Coursework: ", style={"color": CONFIG['text-dark']}), 
                                         html.Span(
-                                            "Machine Learning, Big Data Systems, Advanced NLP, Optimization, "
-                                            "Digital Image Processing, Probability & Information Theory in ML, "
-                                            "Theoretical Foundations of Data Science",
+                                            "Machine Learning, Probability & Information Theory in ML, "
+                                            "Theoretical Foundations of Data Science, Big Data Systems, "
+                                            "Advanced NLP, Optimization, "
+                                            "Digital Image Processing",
                                             style={
                                                 "color": CONFIG['text-dark'],
                                             }
@@ -341,9 +342,10 @@ education_narrow = html.Div(
                                         html.Br(),
                                         html.B("Coursework: ", style={"color": CONFIG['text-dark']}), 
                                         html.Span(
-                                            "Machine Learning, Big Data Systems, Advanced NLP, Optimization, "
-                                            "Digital Image Processing, Probability & Information Theory in ML, "
-                                            "Theoretical Foundations of Data Science",
+                                            "Machine Learning, Probability & Information Theory in ML, "
+                                            "Theoretical Foundations of Data Science, Big Data Systems, "
+                                            "Advanced NLP, Optimization, "
+                                            "Digital Image Processing",
                                             style={
                                                 "color": CONFIG['text-dark'],
                                             }

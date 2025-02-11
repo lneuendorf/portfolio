@@ -221,20 +221,14 @@ low_resource_machine_translation = (
                             },
                         ),
                         html.P([
-                            "Implemented and adapted several NLP data pre-processing techniques, including ",
-                            html.B("Joint Dropout"),
-                            " and ",
-                            html.B("Data Diversification"),
-                            ", to limited-data settings. These techniques were originally developed ",
-                            "for big data settings. ",
-                            html.B("Joint Dropout"),
-                            " improved translation quality, achieving a ",
-                            html.B("20.1 BLEU"),
-                            " score (vs. baseline 18.6), while ",
-                            html.B("Data Diversification"),
-                            " yielded ",
-                            html.B("11.4 BLEU"),
-                            ", highlighting its limitations in data-constrained environments.",
+                            "Explored various NLP data pre-processing techniques to enhance translation quality in low-resource settings, specifically for Nepali-to-English translation. ",
+                            "BART, a transformer-based model, significantly improved performance, achieving a ",
+                            "2.11 BLEU",
+                            " score compared to the baseline of ",
+                            "1.07 BLEU",
+                            ", demonstrating its effectiveness in this limited-data scenario. "
+                            "Joint Dropout led to a modest improvement, reaching ",
+                            "1.11 BLEU.",
                         ],
                         style={
                             "color": CONFIG['text-dark'],
@@ -312,15 +306,15 @@ saguage = (
                         ),
                         html.P([
                             "Developed ",
-                            html.B("Sanguage"),
+                            "Sanguage",
                             ", an Android mobile app that recognizes and translates ",
-                            html.B("American Sign Language (ASL) alphabet letters"),
+                            "American Sign Language (ASL) alphabet letters",
                             " into text in real time using the TensorFlow Lite model ",
-                            html.B("EfficientNet-Lite0"),
+                            "EfficientNet-Lite0",
                             ", achieving ",
-                            html.B("99.43% test set classification accuracy"),
+                            "99.43% test set classification accuracy",
                             ". While this prototype focuses on Alphabetical letters, it demonstrates the potential ",
-                            "for a larger-scale system that could enable real-time ASL translation for seamless communication."
+                            "for a larger-scale system that could enable real-time ASL translations."
                         ],
                         style={
                             "color": CONFIG['text-dark'],
@@ -393,15 +387,16 @@ ffcrystalball = (
                         ),
                        html.P([
                             "Developed ",
-                            html.B("FFCrystal Ball"),
+                            "FFCrystal Ball",
                             ", a fantasy football analytics tool leveraging ",
-                            html.B("quantile regression"),
+                            "quantile regression",
                             " with ",
-                            html.B("gradient boosting"),
+                            "gradient boosting",
                             " to predict a player's range of fantasy point outcomes. This approach ",
                             "improved mean absolute error by ",
-                            html.B("15%"),
-                            " compared to a baseline linear regression model, providing more accurate player performance projections."
+                            "15%",
+                            " compared to a baseline linear regression model, demonstrating the value of ",
+                            "a more complex model."
                         ],
                         style={
                             "color": CONFIG['text-dark'],
@@ -474,13 +469,13 @@ octoberodds = (
                         ),
                         html.P([
                             "This project is currently in progress and aims to provide a dynamic visualization of each ",
-                            html.B("MLB team's probability of making the playoffs"),
+                            "MLB team's probability of making the playoffs",
                             " at any point in the season. The app will utilize a ",
-                            html.B("win probability model"),
+                            "win probability model",
                             " to estimate the likelihood of winning each remaining game and employ ",
-                            html.B("Monte Carlo simulation"),
+                            "Monte Carlo simulation",
                             " to generate probability distributions for playoff qualification. Additionally, it will display ",
-                            html.B("World Series winner odds"),
+                            "World Series winner odds",
                             " based on simulated season outcomes."
                         ],
                         style={
