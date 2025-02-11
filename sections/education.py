@@ -240,7 +240,7 @@ education_narrow = html.Div(
             id="education-line",
             style={
                 "position": "absolute",
-                "right": "45px",  # 50px from the boxes
+                "right": "37px",  # 50px from the boxes
                 "width": "2px",
                 "height": "calc(100% - 15px)",  # Adjusted height to fit between boxes
                 "background": CONFIG['text-dark'],
@@ -263,7 +263,7 @@ education_narrow = html.Div(
                         html.Div(
                             style={
                                 "position": "absolute",
-                                "right": "10px",  # Adjusted to align with the vertical line
+                                "right": "3px",  # Adjusted to align with the vertical line
                                 "width": "70px",
                                 "height": "70px",
                                 "border-radius": "50%",
@@ -288,8 +288,8 @@ education_narrow = html.Div(
                         html.Div(
                             style={
                                 "width": "100%",  # Adjusted width
-                                "margin-right": "100px",  # Adjusted to align with the vertical line
-                                "margin-left": "15px",  
+                                "margin-right": "90px",  # Adjusted to align with the vertical line
+                                "margin-left": "4px",  
                                 "padding": "15px",
                                 "background": "#f1f1ee",
                                 "border": "2px solid white",
@@ -367,7 +367,7 @@ education_narrow = html.Div(
                         html.Div(
                             style={
                                 "position": "absolute",
-                                "right": "10px",  # Adjusted to align with the vertical line
+                                "right": "3px",  # Adjusted to align with the vertical line
                                 "width": "70px",
                                 "height": "70px",
                                 "border-radius": "50%",
@@ -392,8 +392,8 @@ education_narrow = html.Div(
                         html.Div(
                             style={
                                 "width": "100%",  # Adjusted width
-                                "margin-right": "100px",  # Adjusted to align with the vertical line
-                                "margin-left": "15px",  
+                                "margin-right": "90px",  # Adjusted to align with the vertical line
+                                "margin-left": "4px",  
                                 "padding": "15px",
                                 "background": "#f1f1ee",
                                 "border": "2px solid white",
@@ -461,18 +461,24 @@ education = dbc.Row(
         html.H2(
             "Education",
             style={
-                "margin-bottom": "30px",
                 "font-size": "36px",
                 "font-weight": "bold",
                 "max-width": CONFIG['max-width'],
                 "margin": "0 auto",
-                "padding-bottom": "20px",
+                "padding-bottom": "25px",
                 "color": CONFIG['text-dark'],
             },
             className="text-center",
         ),
-        html.Hr(style={"border-top": f"2px solid {CONFIG['text-dark']}", "width": "100%", "max-width": CONFIG['max-width']}),
-        # Wide education (shown on larger screens)
+        html.Hr(
+            style={
+                "border-top": f"2px solid {CONFIG['text-dark']}", 
+                "width": f"calc(100% - 30px)",  # Adjust width to account for 30px padding on both sides
+                "max-width": CONFIG['max-width'], 
+                "margin-left": "15px",  # Add 30px padding on the left
+                "margin-right": "15px",  # Add 30px padding on the right
+            }
+        ),
         html.Div(
             education_wide,
             className="timeline-wide"

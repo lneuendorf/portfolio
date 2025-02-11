@@ -139,12 +139,10 @@ skills = dbc.Row([
         html.H2(
             "Skills",
             style={
-                "margin-bottom": "20px",
                 "font-size": "36px",  # Default font size for xs screens
                 "font-weight": "bold",
                 "max-width": CONFIG['max-width'],
                 "margin": "0 auto",
-                # "padding-bottom": "20px",
                 "color": CONFIG['text-dark'],
             },
             className="text-center d-none d-sm-block"  # Hide on xs screens
@@ -152,18 +150,24 @@ skills = dbc.Row([
         html.H2(
             "Skills",
             style={
-                "margin-bottom": "20px",
                 "font-size": "32px",  # Font size for sm screens and larger
                 "font-weight": "bold",
                 "max-width": CONFIG['max-width'],
                 "margin": "0 auto",
-                # "padding-bottom": "20px",
                 "color": CONFIG['text-dark'],
             },
             className="text-center d-block d-sm-none"  # Show only on xs screens
         ),
-        html.Hr(style={"border-top": "2px solid", "width": "100%", "max-width": CONFIG['max-width'], "color": CONFIG['text-dark']}),
-
+        html.Hr(
+            style={
+                "border-top": "2px solid", 
+                "width": f"calc(100% - 30px)",  # Adjust width to account for 30px padding on both sides
+                "max-width": CONFIG['max-width'], 
+                "color": CONFIG['text-dark'], 
+                "margin-left": "15px",  # Add 30px padding on the left
+                "margin-right": "15px",  # Add 30px padding on the right
+            }
+        ),
         # Responsive Skill Cards (Auto-filled)
         dbc.Row([
             dbc.Col(skill, lg=4, xs=6, className="d-flex flex-column px-2 col-xxs-12") for skill in skill_cards

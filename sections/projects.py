@@ -96,7 +96,7 @@ nfl_bdb_2025 = (
             style={
                 "border-radius": "15px",
                 "overflow": "hidden",
-                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
+                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                 "width": "100%",
                 # "max-width": "400px",
                 "border": "2px solid white",
@@ -183,7 +183,7 @@ nfl_bdb_2024 = (
             style={
                 "border-radius": "15px",
                 "overflow": "hidden",
-                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
+                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                 "width": "100%",
                 # "max-width": "400px",
                 "border": "2px solid white",
@@ -273,7 +273,7 @@ low_resource_machine_translation = (
             style={
                 "border-radius": "15px",
                 "overflow": "hidden",
-                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
+                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                 "width": "100%",
                 # "max-width": "400px",
                 "border": "2px solid white",
@@ -354,7 +354,7 @@ saguage = (
             style={
                 "border-radius": "15px",
                 "overflow": "hidden",
-                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
+                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                 "width": "100%",
                 # "max-width": "400px",
                 "border": "2px solid white",
@@ -435,7 +435,7 @@ ffcrystalball = (
             style={
                 "border-radius": "15px",
                 "overflow": "hidden",
-                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
+                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                 "width": "100%",
                 # "max-width": "400px",
                 "border": "2px solid white",
@@ -515,7 +515,7 @@ octoberodds = (
             style={
                 "border-radius": "15px",
                 "overflow": "hidden",
-                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.2)",
+                "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                 "width": "100%",
                 # "max-width": "400px",
                 "border": "2px solid white",
@@ -531,12 +531,11 @@ projects = dbc.Row([
     html.H2(
         "Projects",
         style={
-            "margin-bottom": "30px",
             "font-size": "36px",  # Default font size for xs screens
             "font-weight": "bold",
             "max-width": CONFIG['max-width'],
             "margin": "0 auto",
-            "padding-bottom": "20px",
+            "padding-bottom": "25px",
             "color": CONFIG['text-dark'],
         },
         className="text-center d-none d-sm-block"  # Hide on xs screens
@@ -544,18 +543,24 @@ projects = dbc.Row([
     html.H2(
         "Projects",
         style={
-            "margin-bottom": "30px",
             "font-size": "32px",  # Font size for sm screens and larger
             "font-weight": "bold",
             "max-width": CONFIG['max-width'],
             "margin": "0 auto",
-            "padding-bottom": "20px",
+            "padding-bottom": "25px",
             "color": CONFIG['text-dark'],
         },
         className="text-center d-block d-sm-none"  # Show only on xs screens
     ),
-    html.Hr(style={"border-top": f"2px solid {CONFIG['text-dark']}", "width": "100%", "max-width": CONFIG['max-width']}),
-
+    html.Hr(
+        style={
+            "border-top": f"2px solid {CONFIG['text-dark']}", 
+            "width": f"calc(100% - 30px)",  # Adjust width to account for 30px padding on both sides
+            "max-width": CONFIG['max-width'], 
+            "margin-left": "15px",  # Add 30px padding on the left
+            "margin-right": "15px",  # Add 30px padding on the right
+        }
+    ),
     dbc.Row([
         dbc.Col([
                 nfl_bdb_2025,
@@ -587,6 +592,7 @@ style={
     "padding-left": CONFIG["padding-left"],
     "padding-right": CONFIG["padding-left"],
     "padding-top": "40px",
+    "padding-bottom": "20px",
     "background-color": "white",
     "margin": "0 auto",
 },

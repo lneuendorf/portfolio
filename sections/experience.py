@@ -399,7 +399,7 @@ timeline_narrow = html.Div(
             id="timeline-line",
             style={
                 "position": "absolute",
-                "left": "45px",  # 50px from the boxes
+                "left": "38px",  # 50px from the boxes
                 "width": "2px",
                 "height": "calc(100% - 15px)",  # Adjusted height to fit between boxes
                 "background": CONFIG['text-dark'],
@@ -422,7 +422,7 @@ timeline_narrow = html.Div(
                         html.Div(
                             style={
                                 "position": "absolute",
-                                "left": "10px",  # Adjusted to align with the vertical line
+                                "left": "4px",  # Adjusted to align with the vertical line
                                 "width": "70px",
                                 "height": "70px",
                                 "border-radius": "50%",
@@ -447,8 +447,8 @@ timeline_narrow = html.Div(
                         html.Div(
                             style={
                                 "width": "100%",  # Adjusted width
-                                "margin-left": "100px",  # Adjusted to align with the vertical line
-                                "margin-right": "15px",  
+                                "margin-left": "90px",  # Adjusted to align with the vertical line
+                                "margin-right": "5px",  
                                 "padding": "15px",
                                 "background": "#f1f1ee",
                                 "border": "2px solid white",
@@ -512,7 +512,7 @@ timeline_narrow = html.Div(
                         html.Div(
                             style={
                                 "position": "absolute",
-                                "left": "10px",  # Adjusted to align with the vertical line
+                                "left": "4px",  # Adjusted to align with the vertical line
                                 "width": "70px",
                                 "height": "70px",
                                 "border-radius": "50%",
@@ -537,8 +537,8 @@ timeline_narrow = html.Div(
                         html.Div(
                             style={
                                 "width": "100%",  # Adjusted width
-                                "margin-left": "100px",  # Adjusted to align with the vertical line
-                                "margin-right": "15px",  
+                                "margin-left": "90px",  # Adjusted to align with the vertical line
+                                "margin-right": "5px",  
                                 "padding": "15px",
                                 "background": "#f1f1ee",
                                 "border": "2px solid white",
@@ -603,7 +603,7 @@ timeline_narrow = html.Div(
                         html.Div(
                             style={
                                 "position": "absolute",
-                                "left": "10px",  # Adjusted to align with the vertical line
+                                "left": "4px",  # Adjusted to align with the vertical line
                                 "width": "70px",
                                 "height": "70px",
                                 "border-radius": "50%",
@@ -628,8 +628,8 @@ timeline_narrow = html.Div(
                         html.Div(
                             style={
                                 "width": "100%",  # Adjusted width
-                                "margin-left": "100px",  # Adjusted to align with the vertical line
-                                "margin-right": "15px",  
+                                "margin-left": "90px",  # Adjusted to align with the vertical line
+                                "margin-right": "5px",  
                                 "padding": "15px",
                                 "background": "#f1f1ee",
                                 "border": "2px solid white",
@@ -690,7 +690,7 @@ timeline_narrow = html.Div(
                         html.Div(
                             style={
                                 "position": "absolute",
-                                "left": "10px",  # Adjusted to align with the vertical line
+                                "left": "4px",  # Adjusted to align with the vertical line
                                 "width": "70px",
                                 "height": "70px",
                                 "border-radius": "50%",
@@ -715,8 +715,8 @@ timeline_narrow = html.Div(
                         html.Div(
                             style={
                                 "width": "100%",  # Adjusted width
-                                "margin-left": "100px",  # Adjusted to align with the vertical line
-                                "margin-right": "15px",  
+                                "margin-left": "90px",  # Adjusted to align with the vertical line
+                                "margin-right": "5px",  
                                 "padding": "15px",
                                 "background": "#f1f1ee",
                                 "border": "2px solid white",
@@ -775,17 +775,24 @@ experience = dbc.Row(
         html.H2(
             "Relevant Experience",
             style={
-                "margin-bottom": "30px",
                 "font-size": "36px",
                 "font-weight": "bold",
                 "max-width": CONFIG['max-width'],
                 "margin": "0 auto",
-                "padding-bottom": "20px",
+                "padding-bottom": "25px",
                 "color": CONFIG['text-dark'],
             },
             className="text-center",
         ),
-        html.Hr(style={"border-top": f"2px solid {CONFIG['text-dark']}", "width": "100%", "max-width": CONFIG['max-width']}),
+        html.Hr(
+            style={
+                "border-top": f"2px solid {CONFIG['text-dark']}", 
+                "width": f"calc(100% - 30px)",  # Adjust width to account for 30px padding on both sides
+                "max-width": CONFIG['max-width'], 
+                "margin-left": "15px",  # Add 30px padding on the left
+                "margin-right": "15px",  # Add 30px padding on the right
+            }
+        ),
         # Wide timeline (shown on larger screens)
         html.Div(
             timeline_wide,
