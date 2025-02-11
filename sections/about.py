@@ -23,7 +23,7 @@ about = (
                     controls=False,
                 )
             ], className="d-flex justify-content-center"),
-        ], sm=12, md=5, className="d-flex align-items-end align-items-md-center justify-content-center mb-3 mb-md-0"),  # Added spacing for small screens
+        ], sm=12, md=5, className="d-flex align-items-end align-items-md-center justify-content-center mb-3 mb-md-0"),
 
         # Text Column
         dbc.Col([
@@ -59,5 +59,5 @@ about = (
         "max-width": CONFIG['max-width'],
         "margin": "0 auto",
     },
-    id="about",)
+    id="about")
 )

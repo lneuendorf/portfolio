@@ -65,7 +65,8 @@ timeline_wide = html.Div(
                                 "width": "45%",
                                 "margin-left": "calc(50% + 50px)",
                                 "padding": "20px",
-                                "background": "white",
+                                "background": "#f1f1ee",
+                                "border": "2px solid white",
                                 "border-radius": "10px",
                                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                                 "position": "relative",
@@ -94,7 +95,7 @@ timeline_wide = html.Div(
                                     ),
                                 ]),
                                 dbc.Row([
-                                    html.H6(
+                                    html.H5(
                                         "Jan 2024 – Present",
                                         className="text-md-start text-center date-text",
                                         style={"color": CONFIG['text-dark']}
@@ -154,7 +155,8 @@ timeline_wide = html.Div(
                                 "width": "45%",
                                 "margin-right": "calc(50% + 50px)",
                                 "padding": "20px",
-                                "background": "white",
+                                "background": "#f1f1ee",
+                                "border": "2px solid white",
                                 "border-radius": "10px",
                                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                                 "position": "relative",
@@ -183,7 +185,7 @@ timeline_wide = html.Div(
                                     ),
                                 ]),
                                 dbc.Row([
-                                    html.H6(
+                                    html.H5(
                                         "May 2023 – Aug 2023",
                                         className="text-md-end text-center date-text",
                                         style={"color": CONFIG['text-dark']}
@@ -244,7 +246,8 @@ timeline_wide = html.Div(
                                 "width": "45%",
                                 "margin-left": "calc(50% + 50px)",
                                 "padding": "20px",
-                                "background": "white",
+                                "background": "#f1f1ee",
+                                "border": "2px solid white",
                                 "border-radius": "10px",
                                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                                 "position": "relative",
@@ -273,7 +276,7 @@ timeline_wide = html.Div(
                                     ),
                                 ]),
                                 dbc.Row([
-                                    html.H6(
+                                    html.H5(
                                         "Aug 2021 – Dec 2021",
                                         className="text-md-start text-center date-text",
                                         style={"color": CONFIG['text-dark']}
@@ -330,7 +333,8 @@ timeline_wide = html.Div(
                                 "width": "100%",
                                 "margin-right": "calc(50% + 50px)",
                                 "padding": "20px",
-                                "background": "white",
+                                "background": "#f1f1ee",
+                                "border": "2px solid white",
                                 "border-radius": "10px",
                                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                                 "position": "relative",
@@ -360,7 +364,7 @@ timeline_wide = html.Div(
                                 ]),
                                 # ], style={"padding-top": "10px"}),
                                 dbc.Row([
-                                    html.H6(
+                                    html.H5(
                                         "Aug 2020 – Dec 2020",
                                         className="text-md-end text-center date-text",
                                         style={"color": CONFIG['text-dark']}
@@ -446,7 +450,8 @@ timeline_narrow = html.Div(
                                 "margin-left": "100px",  # Adjusted to align with the vertical line
                                 "margin-right": "15px",  
                                 "padding": "15px",
-                                "background": "white",
+                                "background": "#f1f1ee",
+                                "border": "2px solid white",
                                 "border-radius": "10px",
                                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                                 "position": "relative",
@@ -475,7 +480,7 @@ timeline_narrow = html.Div(
                                     ),
                                 ]),
                                 dbc.Row([
-                                    html.H6(
+                                    html.H5(
                                         "Jan 2024 – Present",
                                         className="text-md-start text-center date-text-large",
                                         style={"color": CONFIG['text-dark']}
@@ -535,7 +540,8 @@ timeline_narrow = html.Div(
                                 "margin-left": "100px",  # Adjusted to align with the vertical line
                                 "margin-right": "15px",  
                                 "padding": "15px",
-                                "background": "white",
+                                "background": "#f1f1ee",
+                                "border": "2px solid white",
                                 "border-radius": "10px",
                                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                                 "position": "relative",
@@ -564,7 +570,7 @@ timeline_narrow = html.Div(
                                     ),
                                 ]),
                                 dbc.Row([
-                                    html.H6(
+                                    html.H5(
                                         "May 2023 – Aug 2023",
                                         className="text-md-start text-center date-text-large",
                                         style={"color": CONFIG['text-dark']}
@@ -625,7 +631,8 @@ timeline_narrow = html.Div(
                                 "margin-left": "100px",  # Adjusted to align with the vertical line
                                 "margin-right": "15px",  
                                 "padding": "15px",
-                                "background": "white",
+                                "background": "#f1f1ee",
+                                "border": "2px solid white",
                                 "border-radius": "10px",
                                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                                 "position": "relative",
@@ -654,7 +661,7 @@ timeline_narrow = html.Div(
                                     ),
                                 ]),
                                 dbc.Row([
-                                    html.H6(
+                                    html.H5(
                                         "Aug 2021 – Dec 2021",
                                         className="text-md-start text-center date-text-large",
                                         style={"color": CONFIG['text-dark']}
@@ -711,7 +718,8 @@ timeline_narrow = html.Div(
                                 "margin-left": "100px",  # Adjusted to align with the vertical line
                                 "margin-right": "15px",  
                                 "padding": "15px",
-                                "background": "white",
+                                "background": "#f1f1ee",
+                                "border": "2px solid white",
                                 "border-radius": "10px",
                                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                                 "position": "relative",
@@ -740,7 +748,7 @@ timeline_narrow = html.Div(
                                     ),
                                 ]),
                                 dbc.Row([
-                                    html.H6(
+                                    html.H5(
                                         "Aug 2020 – Dec 2020",
                                         className="text-md-start text-center date-text-large",
                                         style={"color": CONFIG['text-dark']}

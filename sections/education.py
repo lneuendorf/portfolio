@@ -65,7 +65,8 @@ education_wide = html.Div(
                                 "width": "45%",
                                 "margin-left": "calc(50% + 50px)",
                                 "padding": "20px",
-                                "background": "white",
+                                "background": "#f1f1ee",
+                                "border": "2px solid white",
                                 "border-radius": "10px",
                                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                                 "position": "relative",
@@ -96,18 +97,16 @@ education_wide = html.Div(
                                     html.H5(
                                         "Sept 2022 - Dec 2023",
                                         className="text-md-start text-center date-text-large",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                        style={"color": CONFIG['text-dark']}
                                     ),
-                                ]),
-                                dbc.Row([
-                                    html.H6(
-                                        "GPA: 3.75/4.0",
-                                        className="text-md-start text-center date-text",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "10px"}
-                                    ),
-                                ]),
+                                ], style={"padding-top": "5px"}),
                                 dbc.Row([
                                     html.Ul([
+                                        html.B("GPA: ", style={"color": CONFIG['text-dark']}),
+                                        html.Span(
+                                            "3.75/4.0", 
+                                            style={"color": CONFIG['text-dark']}),
+                                        html.Br(),
                                         html.B("Focus: ", style={"color": CONFIG['text-dark']}),  # Bold with custom color
                                         html.Span(
                                             "Machine Learning & Signal Processing", 
@@ -128,7 +127,7 @@ education_wide = html.Div(
                         ),
                     ],
                 ),
-                # Data Science Intern at Schneider
+                # B.S. Computer Engineering
                 html.Div(
                     style={
                         "position": "relative",
@@ -169,7 +168,8 @@ education_wide = html.Div(
                                 "width": "45%",
                                 "margin-right": "calc(50% + 50px)",
                                 "padding": "20px",
-                                "background": "white",
+                                "background": "#f1f1ee",
+                                "border": "2px solid white",
                                 "border-radius": "10px",
                                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                                 "position": "relative",
@@ -200,19 +200,17 @@ education_wide = html.Div(
                                     html.H5(
                                         "Sept 2017 - Aug 2022",
                                         className="text-md-end text-center date-text-large",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                        style={"color": CONFIG['text-dark']}
                                     ),
-                                ]),
-                                dbc.Row([
-                                    html.H6(
-                                        "GPA: 3.44/4.0",
-                                        className="text-md-end text-center date-text",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "10px"}
-                                    ),
-                                ]),
+                                ], style={"padding-top": "5px"}),
                                 # Job description
                                 dbc.Row([
                                     html.Ul([
+                                        html.B("GPA: ", style={"color": CONFIG['text-dark']}),
+                                        html.Span(
+                                            "3.44/4.0", 
+                                            style={"color": CONFIG['text-dark']}),
+                                        html.Br(),
                                         html.B("Activities: ", style={"color": CONFIG['text-dark']}), 
                                         html.Span(
                                             "Data Science Club, Wisconsin Autonomous, Wisconsin Space Race, Running Club",
@@ -293,7 +291,8 @@ education_narrow = html.Div(
                                 "margin-right": "100px",  # Adjusted to align with the vertical line
                                 "margin-left": "15px",  
                                 "padding": "15px",
-                                "background": "white",
+                                "background": "#f1f1ee",
+                                "border": "2px solid white",
                                 "border-radius": "10px",
                                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                                 "position": "relative",
@@ -325,18 +324,16 @@ education_narrow = html.Div(
                                     html.H5(
                                         "Sept 2022 - Dec 2023",
                                         className="text-md-start text-center date-text-large",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                        style={"color": CONFIG['text-dark']},
                                     ),
-                                ]),
-                                dbc.Row([
-                                    html.H6(
-                                        "GPA: 3.75/4.0",
-                                        className="text-md-start text-center date-text",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "10px"}
-                                    ),
-                                ]),
+                                ], style={"padding-top": "5px"}),
                                 dbc.Row([
                                     html.Ul([
+                                        html.B("GPA: ", style={"color": CONFIG['text-dark']}),
+                                        html.Span(
+                                            "3.75/4.0", 
+                                            style={"color": CONFIG['text-dark']}),
+                                        html.Br(),
                                         html.B("Focus: ", style={"color": CONFIG['text-dark']}),  # Bold with custom color
                                         html.Span(
                                             "Machine Learning & Signal Processing", 
@@ -398,7 +395,8 @@ education_narrow = html.Div(
                                 "margin-right": "100px",  # Adjusted to align with the vertical line
                                 "margin-left": "15px",  
                                 "padding": "15px",
-                                "background": "white",
+                                "background": "#f1f1ee",
+                                "border": "2px solid white",
                                 "border-radius": "10px",
                                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                                 "position": "relative",
@@ -430,19 +428,17 @@ education_narrow = html.Div(
                                     html.H5(
                                         "Sept 2017 - Aug 2022",
                                         className="text-md-end text-center date-text-large",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                        style={"color": CONFIG['text-dark']}
                                     ),
-                                ]),
-                                dbc.Row([
-                                    html.H6(
-                                        "GPA: 3.44/4.0",
-                                        className="text-md-end text-center date-text",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "10px"}
-                                    ),
-                                ]),
+                                ], style={"padding-top": "5px"}),
                                 # Job description
                                 dbc.Row([
                                     html.Ul([
+                                        html.B("GPA: ", style={"color": CONFIG['text-dark']}),
+                                        html.Span(
+                                            "3.44/4.0", 
+                                            style={"color": CONFIG['text-dark']}),
+                                        html.Br(),
                                         html.B("Activities: ", style={"color": CONFIG['text-dark']}), 
                                         html.Span(
                                             "Data Science Club, Wisconsin Autonomous, Wisconsin Space Race, Running Club",
