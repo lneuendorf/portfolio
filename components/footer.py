@@ -73,6 +73,23 @@ footer = html.Div(
                     width="auto",
                     className="d-flex justify-content-center align-items-center px-2",
                 ),
+
+                # "Code Link"
+                dbc.Col(
+                    html.P(
+                        [
+                            html.A(
+                                "Code", 
+                                href="https://github.com/lneuendorf/portfolio", 
+                                className="text-light", 
+                                target="_blank"
+                            ),
+                        ],
+                        className="text-center text-light m-0",
+                    ),
+                    width="auto",
+                    className="d-flex justify-content-center align-items-center px-2",
+                ),
             ],
             className="d-flex flex-wrap justify-content-center align-items-center",
         ),

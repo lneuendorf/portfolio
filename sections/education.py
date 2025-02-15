@@ -12,7 +12,7 @@ education_wide = html.Div(
     },
     children=[
         html.Div(
-            id="education-line",
+            id="education-line-wide",
             style={
                 "position": "absolute",
                 "left": "calc(50% - 1px)", 
@@ -312,7 +312,7 @@ education_narrow = html.Div(
     children=[
         # Vertical line (positioned on the right)
         html.Div(
-            id="education-line",
+            id="education-line-small",
             style={
                 "position": "absolute",
                 "right": "37px",  # 50px from the boxes

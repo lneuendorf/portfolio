@@ -9,7 +9,7 @@ from sections.experience import experience
 from sections.education import education
 from sections.projects import projects
 from sections.skills import skills
-from sections.footer import footer
+from components.footer import footer
 
 app = dash.Dash(
     __name__, 
@@ -22,22 +22,22 @@ app.layout = html.Div([
     navbar,
     html.Section([
         about,
-    ], id="about"),
+    ], id="about-section"),
     html.Section([
         experience,
-    ], id="experience"),
+    ], id="experience-section"),
     html.Section([
         education,
-    ], id="education"),
+    ], id="education-section"),
     html.Section([
         projects,
-    ], id="projects"),
+    ], id="projects-section"),
     html.Section([
         skills,
-    ], id="skills"),
+    ], id="skills-section"),
     html.Section([
         footer,
-    ], id="footer"),
+    ], id="footer-section"),
 ])
 
 register_callbacks(app)

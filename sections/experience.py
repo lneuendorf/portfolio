@@ -11,7 +11,7 @@ timeline_wide = html.Div(
     },
     children=[
         html.Div(
-            id="timeline-line",
+            id="timeline-line_wide",
             style={
                 "position": "absolute",
                 "left": "calc(50% - 1px)", 
@@ -547,7 +547,7 @@ timeline_narrow = html.Div(
     children=[
         # Vertical line (positioned between the first and last boxes)
         html.Div(
-            id="timeline-line",
+            id="timeline-line_small",
             style={
                 "position": "absolute",
                 "left": "38px",  # 50px from the boxes
