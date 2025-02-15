@@ -13,7 +13,7 @@ about = (
                     style={"width": "100%", "height": "auto"}
                 )
             ], className="d-flex justify-content-center")
-        ], xs=12, sm=5, className="custom-mt-sm"),  # Apply Bootstrap class and custom class
+        ], xs=12, sm=5, className="custom-mt-sm d-flex align-items-center justify-content-center"),  # Center vertically and horizontally on xs screens
         # Text Column
         dbc.Col([
             html.Div([
@@ -22,7 +22,7 @@ about = (
                     style={"font-size": "18px", "margin-bottom": "5px", "color": CONFIG['text-dark']}
                 ),
                 html.H1(
-                    "Luke", 
+                    "Luke Neuendorf", 
                     style={"font-size": "36px", "margin-bottom": "10px", "color": CONFIG['text-dark']}
                 ),
                 html.P([
@@ -32,9 +32,9 @@ about = (
                     "frisbee, or watching the Packers."
                 ], style={"text-align": "justify", "color": CONFIG['text-dark']}),
             ], className="text-left"),
-        ], xs=12, sm=7, style={"margin-top": "20px"}),
+        ], xs=12, sm=7, className="d-flex align-items-center", style={"margin-top": "20px"}),  # Center vertically on xs screens
     ],
-    className="d-flex flex-column flex-md-row align-items-center",
+    className="d-flex flex-column flex-md-row align-items-center justify-content-center",  # Center items vertically and horizontally
     style={
         "min-height": "calc(100vh)",
         "padding-left": CONFIG['padding-left'],

@@ -4,8 +4,7 @@ from dash import html
 navbar = dbc.Navbar(
     dbc.Container([
         dbc.NavbarBrand(
-            "Luke Neuendorf",
-            style={"font-size": "26px"},
+            html.Img(src="/assets/logo.png", height="40px"),
             className="ms-2 fw-bold text-light custom-font",
         ),
 
