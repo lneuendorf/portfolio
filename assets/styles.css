@@ -1,6 +1,6 @@
 /* Default body gradient */
 body {
-    background: linear-gradient(to right, #d1e4ff, #d1ffd9);
+    background: white; /*linear-gradient(to right, #d1e4ff, #d1ffd9); */
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensures the entire body fills the viewport */
@@ -132,5 +132,35 @@ section {
 @media (max-width: 767px) {
     .timeline-narrow {
         display: block;
+    }
+}
+
+.signature-logo {
+    height: 35px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Adjust the logo size on small screens */
+@media (max-width: 576px) {
+    .signature-logo {
+        height: 28px; /* Shrinks to fit */
+    }
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/assets/fonts/Liter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-font {
+    font-family: 'CustomFont', sans-serif;
+}
+
+@media (max-width: 760px) {
+    .custom-mt-sm {
+        margin-top: 64px !important;
     }
 }

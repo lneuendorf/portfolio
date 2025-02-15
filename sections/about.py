@@ -5,27 +5,15 @@ from config.config import CONFIG
 
 about = (
     dbc.Row([
-        # Video Column
+        # Image Column
         dbc.Col([
             html.Div([
-                html.Video(
-                    src="/assets/memoji.mov", 
-                    className="img-fluid",
-                    style={
-                        "width": "100%",
-                        "max-width": "400px",
-                        "object-fit": "cover",
-                        "transform": "scale(1.5)",
-                        "padding-top": "70px",  # Reduced from 70px to 40px
-                    },
-                    loop=True,
-                    autoPlay=True,
-                    muted=True,
-                    controls=False,
+                html.Img(
+                    src="/assets/headshot.png", 
+                    style={"width": "100%", "height": "auto"}
                 )
-            ], className="d-flex justify-content-center"),
-        ], sm=12, md=5, className="d-flex align-items-end align-items-md-center justify-content-center mb-3 mb-md-0"),  # Added spacing for small screens
-
+            ], className="d-flex justify-content-center")
+        ], xs=12, sm=5, className="custom-mt-sm"),  # Apply Bootstrap class and custom class
         # Text Column
         dbc.Col([
             html.Div([
@@ -44,19 +32,15 @@ about = (
                     "frisbee, or watching the Packers."
                 ], style={"text-align": "justify", "color": CONFIG['text-dark']}),
             ], className="text-left"),
-        ], sm=12, md=7, className="d-flex align-items-start align-items-md-center justify-content-center"),  
-        # align-items-start on small screens, align-items-center on medium+
+        ], xs=12, sm=7, style={"margin-top": "20px"}),
     ],
+    className="d-flex flex-column flex-md-row align-items-center",
     style={
         "min-height": "calc(100vh)",
         "padding-left": CONFIG['padding-left'],
         "padding-right": CONFIG['padding-right'],
         "padding-top": "20px",
         "padding-bottom": "20px",
-        "display": "flex",
-        "align-items": "center",
-        "justify-content": "center",
-        "flex-wrap": "wrap",
         "max-width": CONFIG['max-width'],
         "margin": "0 auto",
     },

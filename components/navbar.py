@@ -3,22 +3,18 @@ from dash import html
 
 navbar = dbc.Navbar(
     dbc.Container([
-        # dbc.NavbarBrand(
-        #     "Luke Neuendorf", 
-        #     className="ms-2 fw-bold text-light", 
-        #     style={"fontSize": "30px"}
-        # ),
         dbc.NavbarBrand(
-            html.Img(src="/assets/navbar/signature.png", height="35px"),
-            className="ms-2 fw-bold text-light"
+            "Luke Neuendorf",
+            style={"font-size": "26px"},
+            className="ms-2 fw-bold text-light custom-font",
         ),
-        
+
         dbc.NavbarToggler(
             id="navbar-toggler",
             n_clicks=0,
             className="custom-toggler"
         ),
-        
+
         dbc.Collapse(
             dbc.Nav(
                 [
@@ -35,8 +31,8 @@ navbar = dbc.Navbar(
             navbar=True,
             className="justify-content-end text-end"
         ),
-    ], fluid=True),
+    ], fluid=True, className="d-flex align-items-center justify-content-between"),
     fixed="top",
-    # style={"backgroundColor": "#454748"},
     className="py-1",
 )
+
