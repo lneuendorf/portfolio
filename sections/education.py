@@ -2,6 +2,7 @@ from dash import html
 import dash_bootstrap_components as dbc
 from config.config import CONFIG
 
+# Define the layout
 education_wide = html.Div(
     style={
         "position": "relative",
@@ -86,44 +87,81 @@ education_wide = html.Div(
                                         "border-right": "10px solid white",
                                     }
                                 ),
-                                dbc.Row([
-                                    html.H3(
-                                        "M.S. Computer Engineering",
-                                        className="text-md-start text-center",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
-                                    ),
-                                ]),
-                                dbc.Row([
-                                    html.H5(
-                                        "Sept 2022 - Dec 2023",
-                                        className="text-md-start text-center date-text-large",
-                                        style={"color": CONFIG['text-dark']}
-                                    ),
-                                ], style={"padding-top": "5px"}),
-                                dbc.Row([
-                                    html.Ul([
-                                        html.B("GPA: ", style={"color": CONFIG['text-dark']}),
-                                        html.Span(
-                                            "3.75/4.0", 
-                                            style={"color": CONFIG['text-dark']}),
-                                        html.Br(),
-                                        html.B("Focus: ", style={"color": CONFIG['text-dark']}),  # Bold with custom color
-                                        html.Span(
-                                            "Machine Learning & Signal Processing", 
-                                            style={"color": CONFIG['text-dark']}),
-                                        html.Br(),
-                                        html.B("Coursework: ", style={"color": CONFIG['text-dark']}), 
-                                        html.Span(
-                                            "Machine Learning, Probability & Information Theory in ML, "
-                                            "Theoretical Foundations of Data Science, Big Data Systems, "
-                                            "Advanced NLP, Optimization, "
-                                            "Digital Image Processing",
-                                            style={
-                                                "color": CONFIG['text-dark'],
-                                            }
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            [
+                                                html.H3(
+                                                    "M.S. Computer Engineering",
+                                                    className="text-start",
+                                                    style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                                ),
+                                                html.H5(
+                                                    "Sept 2022 - Dec 2023",
+                                                    className="text-start date-text-large mb-0",
+                                                    style={"color": CONFIG['text-dark']}
+                                                ),
+                                            ],
+                                            width=10,
                                         ),
-                                    ], className="text-start text-dark"),
-                                ]),
+                                        dbc.Col(
+                                            dbc.Button(
+                                                "+",
+                                                id="collapse-button-masters-lg",
+                                                outline=True,
+                                                n_clicks=0,
+                                                size="sm",
+                                                style={
+                                                    "width": "30px",
+                                                    "height": "30px",
+                                                    "border-radius": "20%",
+                                                    "align-items": "center",
+                                                    "justify-content": "center",
+                                                    "margin": "auto",
+                                                    "display": "flex",
+                                                    "background": "transparent",
+                                                    "font-weight": "bold",
+                                                    "border": f"2px solid {CONFIG['text-dark']}",
+                                                    "color": CONFIG['text-dark'],
+                                                },
+                                            ),
+                                            width=2,
+                                            style={
+                                                "align-items": "center",  # Center vertically
+                                            },
+                                        ),
+                                    ],
+                                    align="center",  # Align items vertically in the row
+                                ),
+                                # Collapsible component
+                                dbc.Collapse(
+                                    dbc.Row([
+                                        html.Ul([
+                                            html.B("GPA: ", style={"color": CONFIG['text-dark']}),
+                                            html.Span(
+                                                "3.75/4.0", 
+                                                style={"color": CONFIG['text-dark']}),
+                                            html.Br(),
+                                            html.B("Focus: ", style={"color": CONFIG['text-dark']}),
+                                            html.Span(
+                                                "Machine Learning & Signal Processing", 
+                                                style={"color": CONFIG['text-dark']}),
+                                            html.Br(),
+                                            html.B("Coursework: ", style={"color": CONFIG['text-dark']}), 
+                                            html.Span(
+                                                "Machine Learning, Probability & Information Theory in ML, "
+                                                "Theoretical Foundations of Data Science, Big Data Systems, "
+                                                "Advanced NLP, Optimization, "
+                                                "Digital Image Processing",
+                                                style={
+                                                    "color": CONFIG['text-dark'],
+                                                }
+                                            ),
+                                        ], className="text-start text-dark mt-1 mb-0"),
+                                    ]),
+                                    id="collapse-masters-lg",
+                                    is_open=False,
+                                ),
                             ],
                         ),
                     ],
@@ -190,35 +228,71 @@ education_wide = html.Div(
                                         "border-left": "10px solid white",
                                     }
                                 ),
-                                dbc.Row([
-                                    html.H3(
-                                        "B.S. Computer Engineering",
-                                        className="text-md-end text-center",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
-                                    ),
-                                ]),
-                                dbc.Row([
-                                    html.H5(
-                                        "Sept 2017 - Aug 2022",
-                                        className="text-md-end text-center date-text-large",
-                                        style={"color": CONFIG['text-dark']}
-                                    ),
-                                ], style={"padding-top": "5px"}),
-                                # Job description
-                                dbc.Row([
-                                    html.Ul([
-                                        html.B("GPA: ", style={"color": CONFIG['text-dark']}),
-                                        html.Span(
-                                            "3.44/4.0", 
-                                            style={"color": CONFIG['text-dark']}),
-                                        html.Br(),
-                                        html.B("Activities: ", style={"color": CONFIG['text-dark']}), 
-                                        html.Span(
-                                            "Data Science Club, Wisconsin Autonomous, Wisconsin Space Race, Running Club",
-                                            style={"color": CONFIG['text-dark']}
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            dbc.Button(
+                                                "+",
+                                                id="collapse-button-bachelors-lg",
+                                                outline=True,
+                                                n_clicks=0,
+                                                size="sm",
+                                                style={
+                                                    "width": "30px",
+                                                    "height": "30px",
+                                                    "border-radius": "20%",
+                                                    "align-items": "center",
+                                                    "justify-content": "center",
+                                                    "margin": "auto",
+                                                    "display": "flex",
+                                                    "background": "transparent",
+                                                    "font-weight": "bold",
+                                                    "border": f"2px solid {CONFIG['text-dark']}",
+                                                    "color": CONFIG['text-dark'],
+                                                },
+                                            ),
+                                            width=2,
+                                            style={
+                                                "align-items": "center",  # Center vertically
+                                            },
                                         ),
-                                    ], className="text-start text-dark")
-                                ]),
+                                        dbc.Col(
+                                            [
+                                                html.H3(
+                                                    "B.S. Computer Engineering",
+                                                    className="text-end",
+                                                    style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                                ),
+                                                html.H5(
+                                                    "Sept 2017 - Aug 2022",
+                                                    className="text-end date-text-large mb-0",
+                                                    style={"color": CONFIG['text-dark']}
+                                                ),
+                                            ],
+                                            width=10,
+                                        ),
+                                    ],
+                                    align="center",  # Align items vertically in the row
+                                ),
+                                # Collapsible component
+                                dbc.Collapse(
+                                    dbc.Row([
+                                        html.Ul([
+                                            html.B("GPA: ", style={"color": CONFIG['text-dark']}),
+                                            html.Span(
+                                                "3.44/4.0",
+                                                style={"color": CONFIG['text-dark']}),
+                                            html.Br(),
+                                            html.B("Activities: ", style={"color": CONFIG['text-dark']}),
+                                            html.Span(
+                                                "Data Science Club, Wisconsin Autonomous, Wisconsin Space Race, Running Club",
+                                                style={"color": CONFIG['text-dark']}
+                                            ),
+                                        ], className="text-start text-dark mt-1 mb-0"),
+                                    ]),
+                                    id="collapse-bachelors-lg",
+                                    is_open=False,
+                                ),
                             ],
                         ),
                     ],
@@ -314,44 +388,81 @@ education_narrow = html.Div(
                                     }
                                 ),
                                 # Job title and date
-                                dbc.Row([
-                                    html.H3(
-                                        "M.S. Computer Engineering",
-                                        className="text-md-start text-center",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
-                                    ),
-                                ]),
-                                dbc.Row([
-                                    html.H5(
-                                        "Sept 2022 - Dec 2023",
-                                        className="text-md-start text-center date-text-large",
-                                        style={"color": CONFIG['text-dark']},
-                                    ),
-                                ], style={"padding-top": "5px"}),
-                                dbc.Row([
-                                    html.Ul([
-                                        html.B("GPA: ", style={"color": CONFIG['text-dark']}),
-                                        html.Span(
-                                            "3.75/4.0", 
-                                            style={"color": CONFIG['text-dark']}),
-                                        html.Br(),
-                                        html.B("Focus: ", style={"color": CONFIG['text-dark']}),  # Bold with custom color
-                                        html.Span(
-                                            "Machine Learning & Signal Processing", 
-                                            style={"color": CONFIG['text-dark']}),
-                                        html.Br(),
-                                        html.B("Coursework: ", style={"color": CONFIG['text-dark']}), 
-                                        html.Span(
-                                            "Machine Learning, Probability & Information Theory in ML, "
-                                            "Theoretical Foundations of Data Science, Big Data Systems, "
-                                            "Advanced NLP, Optimization, "
-                                            "Digital Image Processing",
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            dbc.Button(
+                                                "+",
+                                                id="collapse-button-masters",
+                                                outline=True,
+                                                n_clicks=0,
+                                                size="sm",
+                                                style={
+                                                    "width": "30px",
+                                                    "height": "30px",
+                                                    "border-radius": "20%",
+                                                    "align-items": "center",
+                                                    "justify-content": "center",
+                                                    "margin": "auto",
+                                                    "display": "flex",
+                                                    "background": "transparent",
+                                                    "font-weight": "bold",
+                                                    "border": f"2px solid {CONFIG['text-dark']}",
+                                                    "color": CONFIG['text-dark'],
+                                                },
+                                            ),
+                                            width=2,
                                             style={
-                                                "color": CONFIG['text-dark'],
-                                            }
+                                                "align-items": "center",  # Center vertically
+                                            },
                                         ),
-                                    ], className="text-start text-dark"),
-                                ]),
+                                        dbc.Col(
+                                            [
+                                                html.H3(
+                                                    "M.S. Computer Engineering",
+                                                    className="text-end",
+                                                    style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                                ),
+                                                html.H5(
+                                                    "Sept 2022 - Dec 2023",
+                                                    className="text-end date-text-large mb-0",
+                                                    style={"color": CONFIG['text-dark']}
+                                                ),
+                                            ],
+                                            width=10,
+                                        ),
+                                    ],
+                                    align="center",  # Align items vertically in the row
+                                ),
+                                # Collapsible component
+                                dbc.Collapse(
+                                    dbc.Row([
+                                        html.Ul([
+                                            html.B("GPA: ", style={"color": CONFIG['text-dark']}),
+                                            html.Span(
+                                                "3.75/4.0", 
+                                                style={"color": CONFIG['text-dark']}),
+                                            html.Br(),
+                                            html.B("Focus: ", style={"color": CONFIG['text-dark']}),
+                                            html.Span(
+                                                "Machine Learning & Signal Processing", 
+                                                style={"color": CONFIG['text-dark']}),
+                                            html.Br(),
+                                            html.B("Coursework: ", style={"color": CONFIG['text-dark']}), 
+                                            html.Span(
+                                                "Machine Learning, Probability & Information Theory in ML, "
+                                                "Theoretical Foundations of Data Science, Big Data Systems, "
+                                                "Advanced NLP, Optimization, "
+                                                "Digital Image Processing",
+                                                style={
+                                                    "color": CONFIG['text-dark'],
+                                                }
+                                            ),
+                                        ], className="text-start text-dark mt-1 mb-0"),
+                                    ]),
+                                    id="collapse-masters",
+                                    is_open=False,
+                                ),
                             ],
                         ),
                     ],
@@ -419,35 +530,71 @@ education_narrow = html.Div(
                                     }
                                 ),
                                 # Job title and date
-                                dbc.Row([
-                                    html.H3(
-                                        "B.S. Computer Engineering",
-                                        className="text-md-end text-center",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
-                                    ),
-                                ]),
-                                dbc.Row([
-                                    html.H5(
-                                        "Sept 2017 - Aug 2022",
-                                        className="text-md-end text-center date-text-large",
-                                        style={"color": CONFIG['text-dark']}
-                                    ),
-                                ], style={"padding-top": "5px"}),
-                                # Job description
-                                dbc.Row([
-                                    html.Ul([
-                                        html.B("GPA: ", style={"color": CONFIG['text-dark']}),
-                                        html.Span(
-                                            "3.44/4.0", 
-                                            style={"color": CONFIG['text-dark']}),
-                                        html.Br(),
-                                        html.B("Activities: ", style={"color": CONFIG['text-dark']}), 
-                                        html.Span(
-                                            "Data Science Club, Wisconsin Autonomous, Wisconsin Space Race, Running Club",
-                                            style={"color": CONFIG['text-dark']}
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            dbc.Button(
+                                                "+",
+                                                id="collapse-button-bachelors",
+                                                outline=True,
+                                                n_clicks=0,
+                                                size="sm",
+                                                style={
+                                                    "width": "30px",
+                                                    "height": "30px",
+                                                    "border-radius": "20%",
+                                                    "align-items": "center",
+                                                    "justify-content": "center",
+                                                    "margin": "auto",
+                                                    "display": "flex",
+                                                    "background": "transparent",
+                                                    "font-weight": "bold",
+                                                    "border": f"2px solid {CONFIG['text-dark']}",
+                                                    "color": CONFIG['text-dark'],
+                                                },
+                                            ),
+                                            width=2,
+                                            style={
+                                                "align-items": "center",  # Center vertically
+                                            },
                                         ),
-                                    ], className="text-start text-dark")
-                                ]),
+                                        dbc.Col(
+                                            [
+                                                html.H3(
+                                                    "B.S. Computer Engineering",
+                                                    className="text-end",
+                                                    style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                                ),
+                                                html.H5(
+                                                    "Sept 2017 - Aug 2022",
+                                                    className="text-end date-text-large mb-0",
+                                                    style={"color": CONFIG['text-dark']}
+                                                ),
+                                            ],
+                                            width=10,
+                                        ),
+                                    ],
+                                    align="center",  # Align items vertically in the row
+                                ),
+                                # Collapsible component
+                                dbc.Collapse(
+                                    dbc.Row([
+                                        html.Ul([
+                                            html.B("GPA: ", style={"color": CONFIG['text-dark']}),
+                                            html.Span(
+                                                "3.44/4.0",
+                                                style={"color": CONFIG['text-dark']}),
+                                            html.Br(),
+                                            html.B("Activities: ", style={"color": CONFIG['text-dark']}), 
+                                            html.Span(
+                                                "Data Science Club, Wisconsin Autonomous, Wisconsin Space Race, Running Club",
+                                                style={"color": CONFIG['text-dark']}
+                                            ),
+                                        ], className="text-start text-dark mt-1 mb-0"),
+                                    ]),
+                                    id="collapse-bachelors",
+                                    is_open=False,
+                                ),
                             ],
                         ),
                     ],

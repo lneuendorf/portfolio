@@ -86,31 +86,68 @@ timeline_wide = html.Div(
                                         "border-right": "10px solid white",
                                     }
                                 ),
-                                # Job title and date
-                                dbc.Row([
-                                    html.H3(
-                                        "Data Engineer",
-                                        className="text-md-start text-center",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "3px"}
-                                    ),
-                                ]),
-                                dbc.Row([
-                                    html.H5(
-                                        "Jan 2024 – Present",
-                                        className="text-md-start text-center date-text",
-                                        style={"color": CONFIG['text-dark']}
-                                    ),
-                                ], style={"padding-top": "5px"}),
-                                # Job description
-                                html.Ul([
-                                    html.Li("Built a process-based model to classify late orders, intersecting "
-                                            "weather polygons with location data. Deployed process on Anaconda Enterprise."),
-                                    html.Li("Refactored a 118-file Java data pipeline for appointment scheduling "
-                                            "into a streamlined 33-file Python solution using VSCode, GitHub "
-                                            "Copilot, Unit Testing, and SQL."),
-                                    html.Li("Completed several smaller projects, working with Snowflake, "
-                                            "cloud deployments, APIs, Azure ML, and more."),
-                                ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            [
+                                                html.H3(
+                                                    "Data Engineer",
+                                                    className="text-start",
+                                                    style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                                ),
+                                                html.H5(
+                                                    "Jan 2024 – Present",
+                                                    className="text-start date-text-large mb-0",
+                                                    style={"color": CONFIG['text-dark']}
+                                                ),
+                                            ],
+                                            width=10,
+                                        ),
+                                        dbc.Col(
+                                            dbc.Button(
+                                                "+",
+                                                id="collapse-button-data-eng-lg",
+                                                outline=True,
+                                                n_clicks=0,
+                                                size="sm",
+                                                style={
+                                                    "width": "30px",
+                                                    "height": "30px",
+                                                    "border-radius": "20%",
+                                                    "align-items": "center",
+                                                    "justify-content": "center",
+                                                    "margin": "auto",
+                                                    "display": "flex",
+                                                    "background": "transparent",
+                                                    "font-weight": "bold",
+                                                    "border": f"2px solid {CONFIG['text-dark']}",
+                                                    "color": CONFIG['text-dark'],
+                                                },
+                                            ),
+                                            width=2,
+                                            style={
+                                                "align-items": "center",  # Center vertically
+                                            },
+                                        ),
+                                    ],
+                                    align="center",  # Align items vertically in the row
+                                ),
+                                # Collapsible component
+                                dbc.Collapse(
+                                    dbc.Row([
+                                        html.Ul([
+                                            html.Li("Built a process-based model to classify late orders, intersecting "
+                                                    "weather polygons with location data. Deployed process on Anaconda Enterprise."),
+                                            html.Li("Refactored a 118-file Java data pipeline for appointment scheduling "
+                                                    "into a streamlined 33-file Python solution using VSCode, GitHub "
+                                                    "Copilot, Unit Testing, and SQL."),
+                                            html.Li("Completed several smaller projects, working with Snowflake, "
+                                                    "cloud deployments, APIs, Azure ML, and more."),
+                                        ], className="text-start text-dark mt-1 mb-0"),
+                                    ], style={"padding-left": "20px"}),
+                                    id="collapse-data-eng-lg",
+                                    is_open=False,
+                                ),
                             ],
                         ),
                     ],
@@ -177,31 +214,68 @@ timeline_wide = html.Div(
                                         "border-left": "10px solid white",
                                     }
                                 ),
-                                # Job title and date
-                                dbc.Row([
-                                    html.H3(
-                                        "Data Science Intern",
-                                        className="text-md-end text-center",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "3px"}
-                                    ),
-                                ]),
-                                dbc.Row([
-                                    html.H5(
-                                        "May 2023 – Aug 2023",
-                                        className="text-md-end text-center date-text",
-                                        style={"color": CONFIG['text-dark']}
-                                    ),
-                                ], style={"padding-top": "5px"}),
-                                # Job description
-                                html.Ul([
-                                    html.Li("Implemented image filtering pipeline to count semi-truck trailers "
-                                            "in satellite images. Achieved 72% accuracy on test set."),
-                                    html.Li("Developed an XGBoost model to predict the probability of direct "
-                                            "bookings on the Schneider freight app."),
-                                    html.Li("Created PowerBI and Tableau dashboards for 170+ associates, assisting with "
-                                            "driver training, customer resolutions, and staffing estimates."),
-                                    html.Li("Automated ETL process with Python and SQL."),
-                                ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            dbc.Button(
+                                                "+",
+                                                id="collapse-button-data-science-lg",
+                                                outline=True,
+                                                n_clicks=0,
+                                                size="sm",
+                                                style={
+                                                    "width": "30px",
+                                                    "height": "30px",
+                                                    "border-radius": "20%",
+                                                    "align-items": "center",
+                                                    "justify-content": "center",
+                                                    "margin": "auto",
+                                                    "display": "flex",
+                                                    "background": "transparent",
+                                                    "font-weight": "bold",
+                                                    "border": f"2px solid {CONFIG['text-dark']}",
+                                                    "color": CONFIG['text-dark'],
+                                                },
+                                            ),
+                                            width=2,
+                                            style={
+                                                "align-items": "center",  # Center vertically
+                                            },
+                                        ),
+                                        dbc.Col(
+                                            [
+                                                html.H3(
+                                                    "Data Science Intern",
+                                                    className="text-end",
+                                                    style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                                ),
+                                                html.H5(
+                                                    "May 2023 – Aug 2023",
+                                                    className="text-end date-text-large mb-0",
+                                                    style={"color": CONFIG['text-dark']}
+                                                ),
+                                            ],
+                                            width=10,
+                                        ),
+                                    ],
+                                    align="center",  # Align items vertically in the row
+                                ),
+                                # Collapsible component
+                                dbc.Collapse(
+                                    dbc.Row([
+                                        html.Ul([
+                                            html.Li("Implemented image filtering pipeline to count semi-truck trailers "
+                                                    "in satellite images. Achieved 72% accuracy on test set."),
+                                            html.Li("Developed an XGBoost model to predict the probability of direct "
+                                                    "bookings on the Schneider freight app."),
+                                            html.Li("Created PowerBI and Tableau dashboards for 170+ associates, assisting with "
+                                                    "driver training, customer resolutions, and staffing estimates."),
+                                            html.Li("Automated ETL process with Python and SQL."),
+                                        ], className="text-start text-dark mt-1 mb-0"),
+                                    ], style={"padding-left": "20px"}),
+                                    id="collapse-data-science-lg",
+                                    is_open=False,
+                                ),
                             ],
                         ),
                     ],
@@ -268,27 +342,66 @@ timeline_wide = html.Div(
                                         "border-right": "10px solid white",
                                     }
                                 ),
-                                # Job title and date
-                                dbc.Row([
-                                    html.H3(
-                                        "Teaching Assistant",
-                                        className="text-md-start text-center",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "3px"}
-                                    ),
-                                ]),
-                                dbc.Row([
-                                    html.H5(
-                                        "Aug 2021 – Dec 2021",
-                                        className="text-md-start text-center date-text",
-                                        style={"color": CONFIG['text-dark']}
-                                    ),
-                                ], style={"padding-top": "5px"}),
-                                # Job description
-                                html.P([
-                                   "Provided hands-on support to over 80 students, ensuring "
-                                    "comprehension of circuit analysis concepts, and honing skills "
-                                    "in communication, critical thinking, and instructional guidance."
-                                ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            [
+                                                html.H3(
+                                                    "Teaching Assistant",
+                                                    className="text-start",
+                                                    style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                                ),
+                                                html.H5(
+                                                    "Aug 2021 – Dec 2021",
+                                                    className="text-start date-text-large mb-0",
+                                                    style={"color": CONFIG['text-dark']}
+                                                ),
+                                            ],
+                                            width=10,
+                                        ),
+                                        dbc.Col(
+                                            dbc.Button(
+                                                "+",
+                                                id="collapse-button-teaching-lg",
+                                                outline=True,
+                                                n_clicks=0,
+                                                size="sm",
+                                                style={
+                                                    "width": "30px",
+                                                    "height": "30px",
+                                                    "border-radius": "20%",
+                                                    "align-items": "center",
+                                                    "justify-content": "center",
+                                                    "margin": "auto",
+                                                    "display": "flex",
+                                                    "background": "transparent",
+                                                    "font-weight": "bold",
+                                                    "border": f"2px solid {CONFIG['text-dark']}",
+                                                    "color": CONFIG['text-dark'],
+                                                },
+                                            ),
+                                            width=2,
+                                            style={
+                                                "align-items": "center",  # Center vertically
+                                            },
+                                        ),
+                                    ],
+                                    align="center",  # Align items vertically in the row
+                                ),
+                                # Collapsible component
+                                dbc.Collapse(
+                                    dbc.Row([
+                                        html.P([
+                                            "Provided hands-on support to over 80 students, ensuring "
+                                                "comprehension of circuit analysis concepts, and honing skills "
+                                                "in communication, critical thinking, and instructional guidance."
+                                        ], 
+                                        style={"color": CONFIG['text-dark']},
+                                        className="text-start text-dark mt-1 mb-0"),
+                                    ]),
+                                    id="collapse-teaching-lg",
+                                    is_open=False,
+                                ),
                             ],
                         ),
                     ],
@@ -355,29 +468,66 @@ timeline_wide = html.Div(
                                         "border-left": "10px solid white",
                                     }
                                 ),
-                                # Job title and date
-                                dbc.Row([
-                                    html.H3(
-                                        "Mechanical Engineering Intern",
-                                        className="text-md-end text-center",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "3px"}
-                                    ),
-                                ]),
-                                # ], style={"padding-top": "10px"}),
-                                dbc.Row([
-                                    html.H5(
-                                        "Aug 2020 – Dec 2020",
-                                        className="text-md-end text-center date-text",
-                                        style={"color": CONFIG['text-dark']}
-                                    ),
-                                ], style={"padding-top": "5px"}),
-                                # Job description
-                                html.P([
-                                    "Facilitated successful integration of drainage canals in a refinery unit, "
-                                    "fostering smooth cross-departmental collaboration among a 10-member team "
-                                    "encompassing construction, finance, and engineering departments."
-                                    # justify the text
-                                ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            dbc.Button(
+                                                "+",
+                                                id="collapse-button-marathon-lg",
+                                                outline=True,
+                                                n_clicks=0,
+                                                size="sm",
+                                                style={
+                                                    "width": "30px",
+                                                    "height": "30px",
+                                                    "border-radius": "20%",
+                                                    "align-items": "center",
+                                                    "justify-content": "center",
+                                                    "margin": "auto",
+                                                    "display": "flex",
+                                                    "background": "transparent",
+                                                    "font-weight": "bold",
+                                                    "border": f"2px solid {CONFIG['text-dark']}",
+                                                    "color": CONFIG['text-dark'],
+                                                },
+                                            ),
+                                            width=2,
+                                            style={
+                                                "align-items": "center",  # Center vertically
+                                            },
+                                        ),
+                                        dbc.Col(
+                                            [
+                                                html.H3(
+                                                    "Mechanical Engineering Intern",
+                                                    className="text-end",
+                                                    style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                                ),
+                                                html.H5(
+                                                    "Aug 2020 – Dec 2020",
+                                                    className="text-end date-text-large mb-0",
+                                                    style={"color": CONFIG['text-dark']}
+                                                ),
+                                            ],
+                                            width=10,
+                                        ),
+                                    ],
+                                    align="center",  # Align items vertically in the row
+                                ),
+                                # Collapsible component
+                                dbc.Collapse(
+                                    dbc.Row([
+                                        html.P([
+                                            "Facilitated successful integration of drainage canals in a refinery unit, "
+                                            "fostering smooth cross-departmental collaboration among a 10-member team "
+                                            "encompassing construction, finance, and engineering departments."
+                                        ], 
+                                        style={"color": CONFIG['text-dark']},
+                                        className="text-start text-dark mt-1 mb-0"),
+                                    ]),
+                                    id="collapse-marathon-lg",
+                                    is_open=False,
+                                ),
                             ],
                         ),
                     ],
@@ -472,31 +622,68 @@ timeline_narrow = html.Div(
                                         "border-right": "10px solid white",
                                     }
                                 ),
-                                # Job title and date
-                                dbc.Row([
-                                    html.H3(
-                                        "Data Engineer",
-                                        className="text-md-start text-center",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "3px"}
-                                    ),
-                                ]),
-                                dbc.Row([
-                                    html.H5(
-                                        "Jan 2024 – Present",
-                                        className="text-md-start text-center date-text-large",
-                                        style={"color": CONFIG['text-dark']}
-                                    ),
-                                ], style={"padding-top": "5px"}),
-                                # Job description
-                                html.Ul([
-                                    html.Li("Built a process-based model to classify late orders, intersecting "
-                                            "weather polygons with location data. Deployed process on Anaconda Enterprise."),
-                                    html.Li("Refactored a 118-file Java data pipeline for appointment scheduling "
-                                            "into a streamlined 33-file Python solution using VSCode, GitHub "
-                                            "Copilot, Unit Testing, and SQL."),
-                                    html.Li("Completed several smaller projects, working with Snowflake, "
-                                            "cloud deployments, APIs, Azure ML, and more."),
-                                ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            [
+                                                html.H3(
+                                                    "Data Engineer",
+                                                    className="text-start",
+                                                    style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                                ),
+                                                html.H5(
+                                                    "Jan 2024 – Present",
+                                                    className="text-start date-text-large mb-0",
+                                                    style={"color": CONFIG['text-dark']}
+                                                ),
+                                            ],
+                                            width=10,
+                                        ),
+                                        dbc.Col(
+                                            dbc.Button(
+                                                "+",
+                                                id="collapse-button-data-eng",
+                                                outline=True,
+                                                n_clicks=0,
+                                                size="sm",
+                                                style={
+                                                    "width": "30px",
+                                                    "height": "30px",
+                                                    "border-radius": "20%",
+                                                    "align-items": "center",
+                                                    "justify-content": "center",
+                                                    "margin": "auto",
+                                                    "display": "flex",
+                                                    "background": "transparent",
+                                                    "font-weight": "bold",
+                                                    "border": f"2px solid {CONFIG['text-dark']}",
+                                                    "color": CONFIG['text-dark'],
+                                                },
+                                            ),
+                                            width=2,
+                                            style={
+                                                "align-items": "center",  # Center vertically
+                                            },
+                                        ),
+                                    ],
+                                    align="center",  # Align items vertically in the row
+                                ),
+                                # Collapsible component
+                                dbc.Collapse(
+                                    dbc.Row([
+                                        html.Ul([
+                                            html.Li("Built a process-based model to classify late orders, intersecting "
+                                                    "weather polygons with location data. Deployed process on Anaconda Enterprise."),
+                                            html.Li("Refactored a 118-file Java data pipeline for appointment scheduling "
+                                                    "into a streamlined 33-file Python solution using VSCode, GitHub "
+                                                    "Copilot, Unit Testing, and SQL."),
+                                            html.Li("Completed several smaller projects, working with Snowflake, "
+                                                    "cloud deployments, APIs, Azure ML, and more."),
+                                        ], className="text-start text-dark mt-1 mb-0"),
+                                    ], style={"padding-left": "20px"}),
+                                    id="collapse-data-eng",
+                                    is_open=False,
+                                ),
                             ],
                         ),
                     ],
@@ -563,31 +750,68 @@ timeline_narrow = html.Div(
                                         "border-right": "10px solid white",
                                     }
                                 ),
-                                # Job title and date
-                                dbc.Row([
-                                    html.H3(
-                                        "Data Science Intern",
-                                        className="text-md-start text-center",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "3px"}
-                                    ),
-                                ]),
-                                dbc.Row([
-                                    html.H5(
-                                        "May 2023 – Aug 2023",
-                                        className="text-md-start text-center date-text-large",
-                                        style={"color": CONFIG['text-dark']}
-                                    ),
-                                ], style={"padding-top": "5px"}),
-                                # Job description
-                                html.Ul([
-                                    html.Li("Implemented image filtering pipeline to count semi-truck trailers "
-                                            "in satellite images. Achieved 72% accuracy on test set."),
-                                    html.Li("Developed an XGBoost model to predict the probability of direct "
-                                            "bookings on the Schneider freight app."),
-                                    html.Li("Created PowerBI and Tableau dashboards for 170+ associates, assisting with "
-                                            "driver training, customer resolutions, and staffing estimates."),
-                                    html.Li("Automated ETL process with Python and SQL."),
-                                ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            [
+                                                html.H3(
+                                                    "Data Science Intern",
+                                                    className="text-start",
+                                                    style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                                ),
+                                                html.H5(
+                                                    "May 2023 – Aug 2023",
+                                                    className="text-start date-text-large mb-0",
+                                                    style={"color": CONFIG['text-dark']}
+                                                ),
+                                            ],
+                                            width=10,
+                                        ),
+                                        dbc.Col(
+                                            dbc.Button(
+                                                "+",
+                                                id="collapse-button-data-science",
+                                                outline=True,
+                                                n_clicks=0,
+                                                size="sm",
+                                                style={
+                                                    "width": "30px",
+                                                    "height": "30px",
+                                                    "border-radius": "20%",
+                                                    "align-items": "center",
+                                                    "justify-content": "center",
+                                                    "margin": "auto",
+                                                    "display": "flex",
+                                                    "background": "transparent",
+                                                    "font-weight": "bold",
+                                                    "border": f"2px solid {CONFIG['text-dark']}",
+                                                    "color": CONFIG['text-dark'],
+                                                },
+                                            ),
+                                            width=2,
+                                            style={
+                                                "align-items": "center",  # Center vertically
+                                            },
+                                        ),
+                                    ],
+                                    align="center",  # Align items vertically in the row
+                                ),
+                                # Collapsible component
+                                dbc.Collapse(
+                                    dbc.Row([
+                                        html.Ul([
+                                            html.Li("Implemented image filtering pipeline to count semi-truck trailers "
+                                                    "in satellite images. Achieved 72% accuracy on test set."),
+                                            html.Li("Developed an XGBoost model to predict the probability of direct "
+                                                    "bookings on the Schneider freight app."),
+                                            html.Li("Created PowerBI and Tableau dashboards for 170+ associates, assisting with "
+                                                    "driver training, customer resolutions, and staffing estimates."),
+                                            html.Li("Automated ETL process with Python and SQL."),
+                                        ], className="text-start text-dark mt-1 mb-0"),
+                                    ], style={"padding-left": "20px"}),
+                                    id="collapse-data-science",
+                                    is_open=False,
+                                ),
                             ],
                         ),
                     ],
@@ -654,27 +878,66 @@ timeline_narrow = html.Div(
                                         "border-right": "10px solid white",
                                     }
                                 ),
-                                # Job title and date
-                                dbc.Row([
-                                    html.H3(
-                                        "Teaching Assistant",
-                                        className="text-md-start text-center",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "3px"}
-                                    ),
-                                ]),
-                                dbc.Row([
-                                    html.H5(
-                                        "Aug 2021 – Dec 2021",
-                                        className="text-md-start text-center date-text-large",
-                                        style={"color": CONFIG['text-dark']}
-                                    ),
-                                ], style={"padding-top": "5px"}),
-                                # Job description
-                                html.P([
-                                   "Provided hands-on support to over 80 students, ensuring "
-                                    "comprehension of circuit analysis concepts, and honing skills "
-                                    "in communication, critical thinking, and instructional guidance."
-                                ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            [
+                                                html.H3(
+                                                    "Teaching Assistant",
+                                                    className="text-start",
+                                                    style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                                ),
+                                                html.H5(
+                                                    "Aug 2021 – Dec 2021",
+                                                    className="text-start date-text-large mb-0",
+                                                    style={"color": CONFIG['text-dark']}
+                                                ),
+                                            ],
+                                            width=10,
+                                        ),
+                                        dbc.Col(
+                                            dbc.Button(
+                                                "+",
+                                                id="collapse-button-teaching",
+                                                outline=True,
+                                                n_clicks=0,
+                                                size="sm",
+                                                style={
+                                                    "width": "30px",
+                                                    "height": "30px",
+                                                    "border-radius": "20%",
+                                                    "align-items": "center",
+                                                    "justify-content": "center",
+                                                    "margin": "auto",
+                                                    "display": "flex",
+                                                    "background": "transparent",
+                                                    "font-weight": "bold",
+                                                    "border": f"2px solid {CONFIG['text-dark']}",
+                                                    "color": CONFIG['text-dark'],
+                                                },
+                                            ),
+                                            width=2,
+                                            style={
+                                                "align-items": "center",  # Center vertically
+                                            },
+                                        ),
+                                    ],
+                                    align="center",  # Align items vertically in the row
+                                ),
+                                # Collapsible component
+                                dbc.Collapse(
+                                    dbc.Row([
+                                        html.P([
+                                            "Provided hands-on support to over 80 students, ensuring "
+                                                "comprehension of circuit analysis concepts, and honing skills "
+                                                "in communication, critical thinking, and instructional guidance."
+                                        ], 
+                                        style={"color": CONFIG['text-dark']},
+                                        className="text-start text-dark mt-1 mb-0"),
+                                    ]),
+                                    id="collapse-teaching",
+                                    is_open=False,
+                                ),
                             ],
                         ),
                     ],
@@ -741,27 +1004,66 @@ timeline_narrow = html.Div(
                                         "border-right": "10px solid white",
                                     }
                                 ),
-                                # Job title and date
-                                dbc.Row([
-                                    html.H3(
-                                        "Mechanical Engineering Intern",
-                                        className="text-md-start text-center",
-                                        style={"color": CONFIG['text-dark'], "margin-bottom": "3px"}
-                                    ),
-                                ]),
-                                dbc.Row([
-                                    html.H5(
-                                        "Aug 2020 – Dec 2020",
-                                        className="text-md-start text-center date-text-large",
-                                        style={"color": CONFIG['text-dark']}
-                                    ),
-                                ], style={"padding-top": "5px"}),
-                                # Job description
-                                html.P([
-                                    "Facilitated successful integration of drainage canals in a refinery unit, "
-                                    "fostering smooth cross-departmental collaboration among a 10-member team "
-                                    "encompassing construction, finance, and engineering departments."
-                                ], style={"color": CONFIG['text-dark'], "text-align": "left"}),
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            [
+                                                html.H3(
+                                                    "Mechanical Engineering Intern",
+                                                    className="text-start",
+                                                    style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
+                                                ),
+                                                html.H5(
+                                                    "Aug 2020 – Dec 2020",
+                                                    className="text-start date-text-large mb-0",
+                                                    style={"color": CONFIG['text-dark']}
+                                                ),
+                                            ],
+                                            width=10,
+                                        ),
+                                        dbc.Col(
+                                            dbc.Button(
+                                                "+",
+                                                id="collapse-button-marathon",
+                                                outline=True,
+                                                n_clicks=0,
+                                                size="sm",
+                                                style={
+                                                    "width": "30px",
+                                                    "height": "30px",
+                                                    "border-radius": "20%",
+                                                    "align-items": "center",
+                                                    "justify-content": "center",
+                                                    "margin": "auto",
+                                                    "display": "flex",
+                                                    "background": "transparent",
+                                                    "font-weight": "bold",
+                                                    "border": f"2px solid {CONFIG['text-dark']}",
+                                                    "color": CONFIG['text-dark'],
+                                                },
+                                            ),
+                                            width=2,
+                                            style={
+                                                "align-items": "center",  # Center vertically
+                                            },
+                                        ),
+                                    ],
+                                    align="center",  # Align items vertically in the row
+                                ),
+                                # Collapsible component
+                                dbc.Collapse(
+                                    dbc.Row([
+                                        html.P([
+                                            "Facilitated successful integration of drainage canals in a refinery unit, "
+                                            "fostering smooth cross-departmental collaboration among a 10-member team "
+                                            "encompassing construction, finance, and engineering departments."
+                                        ], 
+                                        style={"color": CONFIG['text-dark']},
+                                        className="text-start text-dark mt-1 mb-0"),
+                                    ]),
+                                    id="collapse-marathon",
+                                    is_open=False,
+                                ),
                             ],
                         ),
                     ],
