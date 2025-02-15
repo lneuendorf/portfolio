@@ -5,6 +5,7 @@ footer = html.Div(
     children=[
         dbc.Row(
             children=[
+                # Social Media Icons
                 dbc.Col(
                     dbc.Nav(
                         children=[
@@ -36,7 +37,7 @@ footer = html.Div(
                         className="d-flex justify-content-center",
                     ),
                     width="auto",
-                    className="d-flex justify-content-center align-items-center px-2",
+                    className="d-flex justify-content-center align-items-center px-2 col-12 col-md-auto",
                 ),
 
                 # Email
@@ -53,7 +54,7 @@ footer = html.Div(
                         className="d-flex justify-content-center",
                     ),
                     width="auto",
-                    className="d-flex justify-content-center align-items-center px-2",
+                    className="d-flex justify-content-center align-items-center px-2 col-12 col-md-auto",
                 ),
 
                 # "Made with Dash Plotly"
@@ -71,7 +72,7 @@ footer = html.Div(
                         className="text-center text-light m-0",
                     ),
                     width="auto",
-                    className="d-flex justify-content-center align-items-center px-2",
+                    className="d-flex justify-content-center align-items-center px-2 col-12 col-md-auto",
                 ),
 
                 # "Code Link"
@@ -88,7 +89,7 @@ footer = html.Div(
                         className="text-center text-light m-0",
                     ),
                     width="auto",
-                    className="d-flex justify-content-center align-items-center px-2",
+                    className="d-flex justify-content-center align-items-center px-2 col-12 col-md-auto",
                 ),
             ],
             className="d-flex flex-wrap justify-content-center align-items-center",

@@ -554,7 +554,7 @@ timeline_narrow = html.Div(
                 "width": "2px",
                 "height": "calc(100% - 15px)",  # Adjusted height to fit between boxes
                 "background": CONFIG['text-dark'],
-                "top": "10px",  # Start below the top circle
+                "top": "0px",  # Start below the top circle
             }
         ),
         # Timeline items
