@@ -504,12 +504,12 @@ saguage = (
                                     "Created Sanguage",
                                     ", an Android mobile app that recognizes and translates ",
                                     "American Sign Language (ASL) alphabet letters",
-                                    " into text in real time using the TensorFlow Lite model ",
+                                    " into text in real-time using the TensorFlow Lite model ",
                                     "EfficientNet-Lite0",
                                     ", achieving ",
                                     "99.43% test set classification accuracy",
                                     ". While this prototype focuses on Alphabetical letters, it demonstrates the potential ",
-                                    "for a larger-scale system that could enable real-time ASL translations."
+                                    "for a larger-scale system to enable real-time ASL translations."
                                 ],
                                 style={
                                     "color": CONFIG['text-dark'],
