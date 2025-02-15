@@ -1,4 +1,4 @@
 # Portfolio Site
 Made using the Python-based web-development library, Dash Plotly.
 
-Link: [lukeneuendorf.com](http://lukeneuendorf.com)
+Link: <a href="http://lukeneuendorf.com" target="_blank">lukeneuendorf.com</a>
