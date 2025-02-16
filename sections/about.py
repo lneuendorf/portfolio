@@ -10,7 +10,7 @@ about = (
             html.Div([
                 html.Img(
                     src="/assets/headshot.png", 
-                    style={"width": "100%", "height": "auto"}
+                    style={"width": "100%", "height": "auto", "borderRadius": "5%"},
                 )
             ], className="d-flex justify-content-center")
         ], xs=12, sm=5, className="custom-mt-sm d-flex align-items-center justify-content-center"),  # Center vertically and horizontally on xs screens
@@ -28,8 +28,8 @@ about = (
                 html.P([
                     "I am a Green Bay-based Data Engineer with a background in Computer Engineering "
                     "and Machine Learning. I enjoy spending my free time on sports "
-                    "analytics-related side projects 📊, but you can also find me playing disc golf 平, ultimate "
-                    "frisbee 🥏, biking 🚴🏼, or watching Wisconsin sports 🏈."
+                    "analytics-related side projects, but you can also find me playing disc golf, ultimate "
+                    "frisbee, biking, or watching Wisconsin sports."
                 ], style={"text-align": "justify", "color": CONFIG['text-dark']}),
             ], className="text-left"),
         ], xs=12, sm=7, className="d-flex align-items-center", style={"margin-top": "20px"}),  # Center vertically on xs screens
