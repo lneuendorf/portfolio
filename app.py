@@ -1,3 +1,5 @@
+import os
+
 import dash
 import dash_bootstrap_components as dbc
 from dash import html
@@ -42,5 +44,5 @@ app.layout = html.Div([
 
 register_callbacks(app)
 
-if __name__ == '__main__':
-    app.run_server(debug=False, host='0.0.0.0', port=80)
+if __name__ == "__main__":
+    app.run_server(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8050)))
