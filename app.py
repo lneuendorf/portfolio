@@ -18,6 +18,8 @@ app = dash.Dash(
     external_stylesheets=[dbc.themes.QUARTZ, "/assets/styles.css"],
 )
 
+server = app.server  
+
 app.title = 'Luke Neuendorf'
 
 app.layout = html.Div([
