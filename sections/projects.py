@@ -515,7 +515,7 @@ cfb4thdown = (
                             children=[
                                 dcc.Link(
                                     dbc.Button("Website", color="dark", className="m-1 px-2 py-1"),
-                                    href="https://cfb4thdown.com/",
+                                    href="https://cfb4thdown.com/team-tendencies",
                                     target="_blank"
                                 ),
                                 dbc.Button(
