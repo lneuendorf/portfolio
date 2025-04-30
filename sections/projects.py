@@ -551,7 +551,7 @@ cfb4thdown = (
                 "height": "100%",
             },
         ),
-    ])
+    ], className='mb-3')
 )
 
 projects = dbc.Row([    
