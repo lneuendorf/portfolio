@@ -1,6 +1,6 @@
 from dash import html
 import dash_bootstrap_components as dbc
-import dash_core_components as dcc
+from dash import dcc
 from config.config import CONFIG
 
 nfl_bdb_2025 = (
