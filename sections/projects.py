@@ -1,7 +1,6 @@
 from dash import html
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
-
 from config.config import CONFIG
 
 nfl_bdb_2025 = (
@@ -20,87 +19,44 @@ nfl_bdb_2025 = (
                         dbc.Row(
                             [
                                 dbc.Col(
-                                    html.P(),
-                                    width=2,
-                                ),
-                                dbc.Col(
                                     html.H4("Motion for More", style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}),
-                                    width=8,
-                                ),
-                                dbc.Col(
-                                    dbc.Button(
-                                        "+",
-                                        id="collapse-button-nfl-25",
-                                        outline=True,
-                                        n_clicks=0,
-                                        size="sm",
-                                        style={
-                                            "width": "30px",
-                                            "height": "30px",
-                                            "border-radius": "20%",
-                                            "align-items": "center",
-                                            "justify-content": "center",
-                                            "margin": "auto",
-                                            "display": "flex",
-                                            "background": "transparent",
-                                            "font-weight": "bold",
-                                            "border": f"2px solid {CONFIG['text-dark']}",
-                                            "color": CONFIG['text-dark'],
-                                        },
-                                    ),
-                                    width=2,
-                                    style={
-                                        "align-items": "center",  # Center vertically
-                                    },
+                                    width=12,
                                 ),
                             ],
-                            align="center",  # Align items vertically in the row
+                            align="center",
                         ),
-                        # Brief synopsis (visible when collapse is closed)
-                        html.Div(
-                            id="brief-synopsis-nfl-25",
-                            children=[
-                                html.P(
-                                    "2025 NFL Big Data Bowl Submission (Honorable Mention)",
-                                    style={
-                                        "color": CONFIG['text-dark'],
-                                        "text-align": "center",
-                                        "margin": "10px 0 0 0",
-                                        "font-style": "italic",
-                                    },
-                                ),
-                            ],
+                        html.P(
+                            "2025 NFL Big Data Bowl Submission (Honorable Mention)",
+                            style={
+                                "color": CONFIG['text-dark'],
+                                "text-align": "center",
+                                "margin": "10px 0 0 0",
+                                "font-style": "italic",
+                            },
                         ),
-                        # Collapsible component (visible when collapse is open)
-                        dbc.Collapse(
-                            dbc.Row([
-                                html.P([
-                                    "Used Bayesian regression to analyze the impact of pre-snap motion on ",
-                                    "rushing success in the NFL, identifying the motion types and run concepts ",
-                                    "that maximize yards per carry (YPC). Notably, pre-snap Jet motion ",
-                                    "increased YPC by an average of 0.55 ",
-                                    "compared to the same play without ",
-                                    "it, provided the ball carrier was not the motion player. This project ",
-                                    "earned an ",
-                                    html.B("honorable mention"),
-                                    " in the ",
-                                    html.A(
-                                        "2025 NFL Big Data Bowl",
-                                        href="https://operations.nfl.com/gameday/analytics/big-data-bowl/2025-big-data-bowl-finalists/",
-                                        target="_blank",
-                                        style={"color": CONFIG['text-dark'], "text-decoration": "underline"}
-                                    ),
-                                    "."
-                                ],
-                                style={
-                                    "color": CONFIG['text-dark'],
-                                    "text-align": "justify",
-                                    "margin": "10px 0 0 0",
-                                }),
-                            ]),
-                            id="collapse-nfl-25",
-                            is_open=False,
-                        ),
+                        html.P([
+                            "Used Bayesian regression to analyze the impact of pre-snap motion on ",
+                            "rushing success in the NFL, identifying the motion types and run concepts ",
+                            "that maximize yards per carry (YPC). Notably, pre-snap Jet motion ",
+                            "increased YPC by an average of 0.55 ",
+                            "compared to the same play without ",
+                            "it, provided the ball carrier was not the motion player. This project ",
+                            "earned an ",
+                            html.B("honorable mention"),
+                            " in the ",
+                            html.A(
+                                "2025 NFL Big Data Bowl",
+                                href="https://operations.nfl.com/gameday/analytics/big-data-bowl/2025-big-data-bowl-finalists/",
+                                target="_blank",
+                                style={"color": CONFIG['text-dark'], "text-decoration": "underline"}
+                            ),
+                            "."
+                        ],
+                        style={
+                            "color": CONFIG['text-dark'],
+                            "text-align": "justify",
+                            "margin": "10px 0 0 0",
+                        }),
                         html.Div(
                             children=[
                                 dbc.Button(
@@ -138,7 +94,7 @@ nfl_bdb_2025 = (
                         "background": "#f1f1ee",
                         "padding": "15px",
                         "text-align": "center",
-                        "flex-grow": "1",  # Forces all content sections to be the same height
+                        "flex-grow": "1",
                     },
                 ),
             ],
@@ -165,7 +121,6 @@ nfl_bdb_2024 = (
                     style={
                         "width": "100%",
                         "height": "auto",
-                        # "border-bottom": "2px solid white",
                     },
                 ),
                 html.Div(
@@ -173,77 +128,34 @@ nfl_bdb_2024 = (
                         dbc.Row(
                             [
                                 dbc.Col(
-                                    html.P(),
-                                    width=2,
-                                ),
-                                dbc.Col(
                                     html.H4("TDOE (Tackle Depth Over Expectation)", style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}),
-                                    width=8,
-                                ),
-                                dbc.Col(
-                                    dbc.Button(
-                                        "+",
-                                        id="collapse-button-nfl-24",
-                                        outline=True,
-                                        n_clicks=0,
-                                        size="sm",
-                                        style={
-                                            "width": "30px",
-                                            "height": "30px",
-                                            "border-radius": "20%",
-                                            "align-items": "center",
-                                            "justify-content": "center",
-                                            "margin": "auto",
-                                            "display": "flex",
-                                            "background": "transparent",
-                                            "font-weight": "bold",
-                                            "border": f"2px solid {CONFIG['text-dark']}",
-                                            "color": CONFIG['text-dark'],
-                                        },
-                                    ),
-                                    width=2,
-                                    style={
-                                        "align-items": "center",  # Center vertically
-                                    },
+                                    width=12,
                                 ),
                             ],
-                            align="center",  # Align items vertically in the row
+                            align="center",
                         ),
-                        # Brief synopsis (visible when collapse is closed)
-                        html.Div(
-                            id="brief-synopsis-nfl-24",
-                            children=[
-                                html.P(
-                                    "2024 NFL Big Data Bowl Submission",
-                                    style={
-                                        "color": CONFIG['text-dark'],
-                                        "text-align": "center",
-                                        "margin": "10px 0 0 0",
-                                        "font-style": "italic",
-                                    },
-                                ),
-                            ],
+                        html.P(
+                            "2024 NFL Big Data Bowl Submission",
+                            style={
+                                "color": CONFIG['text-dark'],
+                                "text-align": "center",
+                                "margin": "10px 0 0 0",
+                                "font-style": "italic",
+                            },
                         ),
-                        # Collapsible component (visible when collapse is open)
-                        dbc.Collapse(
-                            dbc.Row([
-                                html.P([
-                                    "Developed a deep learning model using LSTMs to predict the location "
-                                    " of a tackle, achieving an R-Squared of 0.74. Created the metric Tackle Depth Over "
-                                    "Expectation (TDOE) to evaluate tackling effectiveness, "
-                                    "enabling teams to assess defenders' ability to minimize yards gained, "
-                                    "and providing a more contextualized measure of tackling performance beyond traditional "
-                                    "counting stats."
-                                ],
-                                style={
-                                    "color": CONFIG['text-dark'],
-                                    "text-align": "justify",
-                                    "margin": "10px 0 0 0",
-                                }),
-                            ]),
-                            id="collapse-nfl-24",
-                            is_open=False,
-                        ),
+                        html.P([
+                            "Developed a deep learning model using LSTMs to predict the location "
+                            " of a tackle, achieving an R-Squared of 0.74. Created the metric Tackle Depth Over "
+                            "Expectation (TDOE) to evaluate tackling effectiveness, "
+                            "enabling teams to assess defenders' ability to minimize yards gained, "
+                            "and providing a more contextualized measure of tackling performance beyond traditional "
+                            "counting stats."
+                        ],
+                        style={
+                            "color": CONFIG['text-dark'],
+                            "text-align": "justify",
+                            "margin": "10px 0 0 0",
+                        }),
                         html.Div(
                             children=[
                                 dbc.Button(
@@ -283,7 +195,6 @@ nfl_bdb_2024 = (
                 "overflow": "hidden",
                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                 "width": "100%",
-                # "max-width": "400px",
                 "border": "2px solid white",
                 "display": "flex",
                 "flex-direction": "column",
@@ -302,88 +213,43 @@ low_resource_machine_translation = (
                     style={
                         "width": "100%",
                         "height": "auto",
-                        # "border-bottom": "2px solid white",
                     },
                 ),
-
                 html.Div(
                     children=[
                         dbc.Row(
                             [
                                 dbc.Col(
-                                    html.P(),
-                                    width=2,
-                                ),
-                                dbc.Col(
                                     html.H4("Low-Resource Machine Translation Research", style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}),
-                                    width=8,
-                                ),
-                                dbc.Col(
-                                    dbc.Button(
-                                        "+",
-                                        id="collapse-button-low-resource-mt",
-                                        outline=True,
-                                        n_clicks=0,
-                                        size="sm",
-                                        style={
-                                            "width": "30px",
-                                            "height": "30px",
-                                            "border-radius": "20%",
-                                            "align-items": "center",
-                                            "justify-content": "center",
-                                            "margin": "auto",
-                                            "display": "flex",
-                                            "background": "transparent",
-                                            "font-weight": "bold",
-                                            "border": f"2px solid {CONFIG['text-dark']}",
-                                            "color": CONFIG['text-dark'],
-                                        },
-                                    ),
-                                    width=2,
-                                    style={
-                                        "align-items": "center",  # Center vertically
-                                    },
+                                    width=12,
                                 ),
                             ],
-                            align="center",  # Align items vertically in the row
+                            align="center",
                         ),
-                        # Brief synopsis (visible when collapse is closed)
-                        html.Div(
-                            id="brief-synopsis-low-resource-mt",
-                            children=[
-                                html.P(
-                                    "Natural Language Processing Research Project",
-                                    style={
-                                        "color": CONFIG['text-dark'],
-                                        "text-align": "center",
-                                        "margin": "10px 0 0 0",
-                                        "font-style": "italic",
-                                    },
-                                ),
-                            ],
+                        html.P(
+                            "Natural Language Processing Research Project",
+                            style={
+                                "color": CONFIG['text-dark'],
+                                "text-align": "center",
+                                "margin": "10px 0 0 0",
+                                "font-style": "italic",
+                            },
                         ),
-                        # Collapsible component (visible when collapse is open)
-                        dbc.Collapse(
-                            dbc.Row([
-                                html.P([
-                                    "Explored various NLP data pre-processing techniques to enhance translation quality in low-resource settings, specifically for Nepali-to-English translation. ",
-                                    "BART, a transformer-based model, significantly improved performance, achieving a ",
-                                    "2.11 BLEU",
-                                    " score compared to the baseline of ",
-                                    "1.07 BLEU",
-                                    ", demonstrating its effectiveness in this limited-data scenario. "
-                                    "Joint Dropout led to a modest improvement, reaching ",
-                                    "1.11 BLEU.",
-                                ],
-                                style={
-                                    "color": CONFIG['text-dark'],
-                                    "text-align": "justify",
-                                    "margin": "10px 0 0 0",
-                                }),
-                            ]),
-                            id="collapse-low-resource-mt",
-                            is_open=False,
-                        ),
+                        html.P([
+                            "Explored various NLP data pre-processing techniques to enhance translation quality in low-resource settings, specifically for Nepali-to-English translation. ",
+                            "BART, a transformer-based model, significantly improved performance, achieving a ",
+                            "2.11 BLEU",
+                            " score compared to the baseline of ",
+                            "1.07 BLEU",
+                            ", demonstrating its effectiveness in this limited-data scenario. "
+                            "Joint Dropout led to a modest improvement, reaching ",
+                            "1.11 BLEU.",
+                        ],
+                        style={
+                            "color": CONFIG['text-dark'],
+                            "text-align": "justify",
+                            "margin": "10px 0 0 0",
+                        }),
                         html.Div(
                             children=[
                                 dcc.Link(
@@ -418,7 +284,6 @@ low_resource_machine_translation = (
                 "overflow": "hidden",
                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                 "width": "100%",
-                # "max-width": "400px",
                 "border": "2px solid white",
                 "display": "flex",
                 "flex-direction": "column",
@@ -437,89 +302,44 @@ saguage = (
                     style={
                         "width": "100%",
                         "height": "auto",
-                        # "border-bottom": "2px solid white",
                     },
                 ),
-
                 html.Div(
                     children=[
                         dbc.Row(
                             [
                                 dbc.Col(
-                                    html.P(),
-                                    width=2,
-                                ),
-                                dbc.Col(
                                     html.H4("Sangauge", style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}),
-                                    width=8,
-                                ),
-                                dbc.Col(
-                                    dbc.Button(
-                                        "+",
-                                        id="collapse-button-sanguage",
-                                        outline=True,
-                                        n_clicks=0,
-                                        size="sm",
-                                        style={
-                                            "width": "30px",
-                                            "height": "30px",
-                                            "border-radius": "20%",
-                                            "align-items": "center",
-                                            "justify-content": "center",
-                                            "margin": "auto",
-                                            "display": "flex",
-                                            "background": "transparent",
-                                            "font-weight": "bold",
-                                            "border": f"2px solid {CONFIG['text-dark']}",
-                                            "color": CONFIG['text-dark'],
-                                        },
-                                    ),
-                                    width=2,
-                                    style={
-                                        "align-items": "center",  # Center vertically
-                                    },
+                                    width=12,
                                 ),
                             ],
-                            align="center",  # Align items vertically in the row
+                            align="center",
                         ),
-                        # Brief synopsis (visible when collapse is closed)
-                        html.Div(
-                            id="brief-synopsis-sanguage",
-                            children=[
-                                html.P(
-                                    "Computer Vision Senior Design Project",
-                                    style={
-                                        "color": CONFIG['text-dark'],
-                                        "text-align": "center",
-                                        "margin": "10px 0 0 0",
-                                        "font-style": "italic",
-                                    },
-                                ),
-                            ],
+                        html.P(
+                            "Computer Vision Senior Design Project",
+                            style={
+                                "color": CONFIG['text-dark'],
+                                "text-align": "center",
+                                "margin": "10px 0 0 0",
+                                "font-style": "italic",
+                            },
                         ),
-                        # Collapsible component (visible when collapse is open)
-                        dbc.Collapse(
-                            dbc.Row([
-                                html.P([
-                                    "Created Sanguage",
-                                    ", an Android mobile app that recognizes and translates ",
-                                    "American Sign Language (ASL) alphabet letters",
-                                    " into text in real-time using the TensorFlow Lite model ",
-                                    "EfficientNet-Lite0",
-                                    ", achieving ",
-                                    "99.43% test set classification accuracy",
-                                    ". While this prototype focuses on Alphabetical letters, it demonstrates the potential ",
-                                    "for a larger-scale system to enable real-time ASL translations."
-                                ],
-                                style={
-                                    "color": CONFIG['text-dark'],
-                                    "text-align": "justify",
-                                    "margin": "10px 0 0 0",
-                                }),
-                            ]),
-                            id="collapse-sanguage",
-                            is_open=False,
-                        ),
+                        html.P([
+                            "Created Sanguage",
+                            ", an Android mobile app that recognizes and translates ",
+                            "American Sign Language (ASL) alphabet letters",
+                            " into text in real-time using the TensorFlow Lite model ",
+                            "EfficientNet-Lite0",
+                            ", achieving ",
+                            "99.43% test set classification accuracy",
+                            ". While this prototype focuses on Alphabetical letters, it demonstrates the potential ",
+                            "for a larger-scale system to enable real-time ASL translations."
+                        ],
+                        style={
+                            "color": CONFIG['text-dark'],
+                            "text-align": "justify",
+                            "margin": "10px 0 0 0",
+                        }),
                         html.Div(
                             children=[
                                 dbc.Button(
@@ -549,7 +369,6 @@ saguage = (
                 "overflow": "hidden",
                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                 "width": "100%",
-                # "max-width": "400px",
                 "border": "2px solid white",
                 "display": "flex",
                 "flex-direction": "column",
@@ -568,91 +387,46 @@ ffcrystalball = (
                     style={
                         "width": "100%",
                         "height": "auto",
-                        # "border-bottom": "2px solid white",
                     },
                 ),
-
                 html.Div(
                     children=[
                         dbc.Row(
                             [
                                 dbc.Col(
-                                    html.P(),
-                                    width=2,
-                                ),
-                                dbc.Col(
                                     html.H4("Fantasy Football Crystal Ball", style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}),
-                                    width=8,
-                                ),
-                                dbc.Col(
-                                    dbc.Button(
-                                        "+",
-                                        id="collapse-button-ffcrystalball",
-                                        outline=True,
-                                        n_clicks=0,
-                                        size="sm",
-                                        style={
-                                            "width": "30px",
-                                            "height": "30px",
-                                            "border-radius": "20%",
-                                            "align-items": "center",
-                                            "justify-content": "center",
-                                            "margin": "auto",
-                                            "display": "flex",
-                                            "background": "transparent",
-                                            "font-weight": "bold",
-                                            "border": f"2px solid {CONFIG['text-dark']}",
-                                            "color": CONFIG['text-dark'],
-                                        },
-                                    ),
-                                    width=2,
-                                    style={
-                                        "align-items": "center",  # Center vertically
-                                    },
+                                    width=12,
                                 ),
                             ],
-                            align="center",  # Align items vertically in the row
+                            align="center",
                         ),
-                        # Brief synopsis (visible when collapse is closed)
-                        html.Div(
-                            id="brief-synopsis-ffcrystalball",
-                            children=[
-                                html.P(
-                                    "Quantile Regression Fantasy Football Projections",
-                                    style={
-                                        "color": CONFIG['text-dark'],
-                                        "text-align": "center",
-                                        "margin": "10px 0 0 0",
-                                        "font-style": "italic",
-                                    },
-                                ),
-                            ],
+                        html.P(
+                            "Quantile Regression Fantasy Football Projections",
+                            style={
+                                "color": CONFIG['text-dark'],
+                                "text-align": "center",
+                                "margin": "10px 0 0 0",
+                                "font-style": "italic",
+                            },
                         ),
-                        # Collapsible component (visible when collapse is open)
-                        dbc.Collapse(
-                            dbc.Row([
-                                html.P([
-                                    "Architected ",
-                                    "FFCrystal Ball",
-                                    ", a fantasy football analytics tool leveraging ",
-                                    "quantile regression",
-                                    " with ",
-                                    "gradient boosting",
-                                    " to predict a player's range of fantasy point outcomes. This approach ",
-                                    "improved mean absolute error by ",
-                                    "15%",
-                                    " compared to a baseline linear regression model, demonstrating the value of ",
-                                    "a more complex model."
-                                ],
-                                style={
-                                    "color": CONFIG['text-dark'],
-                                    "text-align": "justify",
-                                    "margin": "10px 0 0 0",
-                                }),
-                            ]),
-                            id="collapse-ffcrystalball",
-                            is_open=False,
-                        ),
+                        html.P([
+                            "Architected ",
+                            "FFCrystal Ball",
+                            ", a fantasy football analytics tool leveraging ",
+                            "quantile regression",
+                            " with ",
+                            "gradient boosting",
+                            " to predict a player's range of fantasy point outcomes. This approach ",
+                            "improved mean absolute error by ",
+                            "15%",
+                            " compared to a baseline linear regression model, demonstrating the value of ",
+                            "a more complex model."
+                        ],
+                        style={
+                            "color": CONFIG['text-dark'],
+                            "text-align": "justify",
+                            "margin": "10px 0 0 0",
+                        }),
                         html.Div(
                             children=[
                                 dbc.Button(
@@ -682,7 +456,6 @@ ffcrystalball = (
                 "overflow": "hidden",
                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                 "width": "100%",
-                # "max-width": "400px",
                 "border": "2px solid white",
                 "display": "flex",
                 "flex-direction": "column",
@@ -692,106 +465,65 @@ ffcrystalball = (
     ], className='mb-3')
 )
 
-octoberodds = (
+cfb4thdown = (
     dbc.Col([
         html.Div(
             children=[
                 html.Img(
-                    src="/assets/octoberodds.png",
+                    src="/assets/cfb4thdown.png",
                     style={
                         "width": "100%",
                         "height": "auto",
-                        # "border-bottom": "2px solid white",
                     },
                 ),
-
                 html.Div(
                     children=[
                         dbc.Row(
                             [
                                 dbc.Col(
-                                    html.P(),
-                                    width=2,
-                                ),
-                                dbc.Col(
-                                    html.H4("October Odds", style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}),
-                                    width=8,
-                                ),
-                                dbc.Col(
-                                    dbc.Button(
-                                        "+",
-                                        id="collapse-button-octoberodds",
-                                        outline=True,
-                                        n_clicks=0,
-                                        size="sm",
-                                        style={
-                                            "width": "30px",
-                                            "height": "30px",
-                                            "border-radius": "20%",
-                                            "align-items": "center",
-                                            "justify-content": "center",
-                                            "margin": "auto",
-                                            "display": "flex",
-                                            "background": "transparent",
-                                            "font-weight": "bold",
-                                            "border": f"2px solid {CONFIG['text-dark']}",
-                                            "color": CONFIG['text-dark'],
-                                        },
-                                    ),
-                                    width=2,
-                                    style={
-                                        "align-items": "center",  # Center vertically
-                                    },
+                                    html.H4("CFB 4th Down Decision Recommender", style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}),
+                                    width=12,
                                 ),
                             ],
-                            align="center",  # Align items vertically in the row
+                            align="center",
                         ),
-                        # Brief synopsis (visible when collapse is closed)
+                        html.P(
+                            "College Football Strategy Research",
+                            style={
+                                "color": CONFIG['text-dark'],
+                                "text-align": "center",
+                                "margin": "10px 0 0 0",
+                                "font-style": "italic",
+                            },
+                        ),
+                        html.P([
+                            "The 4th down decision-making application employs an ensemble of four machine "
+                            "learning models to generate optimal recommendations between going for it, "
+                            "punting, or attempting a field goal. Advanced statistical methods including "
+                            "the Heckman Selection Model address selection bias in field goal data, having "
+                            "identified significant non-random missingness (p = 0.041). Through Bayesian "
+                            "optimization with Optuna, three XGBoost models were precisely tuned to enhance "
+                            "predictive accuracy across all decision scenarios, creating a sophisticated "
+                            "analytical framework for in-game strategy optimization."
+                        ],
+                        style={
+                            "color": CONFIG['text-dark'],
+                            "text-align": "justify",
+                            "margin": "10px 0 0 0",
+                        }),
                         html.Div(
-                            id="brief-synopsis-octoberodds",
                             children=[
-                                html.P(
-                                    "MLB Playoff Probability App (In Progress)",
-                                    style={
-                                        "color": CONFIG['text-dark'],
-                                        "text-align": "center",
-                                        "margin": "10px 0 0 0",
-                                        "font-style": "italic",
-                                    },
+                                dcc.Link(
+                                    dbc.Button("Website", color="dark", className="m-1 px-2 py-1"),
+                                    href="https://cfb4thdown.com/",
+                                    target="_blank"
                                 ),
-                            ],
-                        ),
-                        # Collapsible component (visible when collapse is open)
-                        dbc.Collapse(
-                            dbc.Row([
-                                html.P([
-                                    "This project is currently in progress and aims to provide a dynamic visualization of each ",
-                                    "MLB team's probability of making the playoffs",
-                                    " at any point in the season. The app will utilize a ",
-                                    "win probability model",
-                                    " to estimate the likelihood of winning each remaining game and employ ",
-                                    "Monte Carlo simulation",
-                                    " to generate probability distributions for playoff qualification. Additionally, it will display ",
-                                    "World Series winner odds",
-                                    " based on simulated season outcomes."
-                                ],
-                                style={
-                                    "color": CONFIG['text-dark'],
-                                    "text-align": "justify",
-                                    "margin": "10px 0 0 0",
-                                }),
-                            ]),
-                            id="collapse-octoberodds",
-                            is_open=False,
-                        ),
-                        html.Div(
-                            children=[
                                 dbc.Button(
                                     html.Img(
                                         src="/assets/github-logo-full.png",
                                         style={"height": "20px", "width": "auto", "align": "center"},
                                     ),
-                                    href="https://github.com/lneuendorf/mlb-playoff-models",
+                                    href="https://github.com/lneuendorf/4th-down-models",
                                     target="_blank",
                                     color="dark",
                                     className="m-1 px-1 py-1",
@@ -813,7 +545,6 @@ octoberodds = (
                 "overflow": "hidden",
                 "box-shadow": "0px 0px 15px 5px rgba(0, 0, 0, 0.1)",
                 "width": "100%",
-                # "max-width": "400px",
                 "border": "2px solid white",
                 "display": "flex",
                 "flex-direction": "column",
@@ -827,49 +558,49 @@ projects = dbc.Row([
     html.H2(
         "Projects",
         style={
-            "font-size": "36px",  # Default font size for xs screens
+            "font-size": "36px",
             "font-weight": "bold",
             "max-width": CONFIG['max-width'],
             "margin": "0 auto",
             "padding-bottom": "25px",
             "color": CONFIG['text-dark'],
         },
-        className="text-center d-none d-sm-block"  # Hide on xs screens
+        className="text-center d-none d-sm-block"
     ),
     html.H2(
         "Projects",
         style={
-            "font-size": "32px",  # Font size for sm screens and larger
+            "font-size": "32px",
             "font-weight": "bold",
             "max-width": CONFIG['max-width'],
             "margin": "0 auto",
             "padding-bottom": "25px",
             "color": CONFIG['text-dark'],
         },
-        className="text-center d-block d-sm-none"  # Show only on xs screens
+        className="text-center d-block d-sm-none"
     ),
     html.Hr(
         style={
             "border-top": f"2px solid {CONFIG['text-dark']}", 
-            "width": f"calc(100% - 30px)",  # Adjust width to account for 30px padding on both sides
+            "width": f"calc(100% - 30px)",
             "max-width": CONFIG['max-width'], 
-            "margin-left": "15px",  # Add 30px padding on the left
-            "margin-right": "15px",  # Add 30px padding on the right
+            "margin-left": "15px",
+            "margin-right": "15px",
         }
     ),
     dbc.Row([
         dbc.Col([
+                cfb4thdown,
                 nfl_bdb_2025,
-                low_resource_machine_translation,
-                ffcrystalball
+                saguage
             ],
             sm=12, md=6, xl=6,
             className="px-2",
         ),
         dbc.Col([
                 nfl_bdb_2024,
-                saguage,
-                octoberodds
+                low_resource_machine_translation,
+                ffcrystalball
             ],
             sm=12, md=6, xl=6,
             className="px-2",
@@ -877,8 +608,8 @@ projects = dbc.Row([
     ], style={
         "max-width": CONFIG['max-width'],
         "padding": "0px 0px 30px 0px",
-        "display": "flex",  # Ensures flexbox behavior for `order`
-        "flex-wrap": "wrap",  # Allows wrapping of tiles on small screens
+        "display": "flex",
+        "flex-wrap": "wrap",
     })
 
 ], 

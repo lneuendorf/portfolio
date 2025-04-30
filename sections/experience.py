@@ -136,13 +136,21 @@ timeline_wide = html.Div(
                                 dbc.Collapse(
                                     dbc.Row([
                                         html.Ul([
-                                            html.Li("Built a process-based model to classify late orders, intersecting "
-                                                    "weather polygons with location data. Deployed process on Anaconda Enterprise."),
-                                            html.Li("Refactored a 118-file Java data pipeline for appointment scheduling "
-                                                    "into a streamlined 33-file Python solution using VSCode, GitHub "
-                                                    "Copilot, Unit Testing, and SQL."),
-                                            html.Li("Completed several smaller projects, working with Snowflake, "
-                                                    "cloud deployments, APIs, Azure ML, and more."),
+                                            html.Li(
+                                                "Created a model to classify the root cause of late deliveries"
+                                                " by identifying traffic delays or severe weather events"
+                                                " intersecting with driver routes. Deployed the solution"
+                                                " to Azure Machine Learning."
+                                            ),
+                                            html.Li(
+                                                "Refactored a 118-file legacy Java appointment scheduling"
+                                                " system into a streamlined 33-file Python solution,"
+                                                " using unit tests to ensure result consistency and accuracy."
+                                            ),
+                                            html.Li(
+                                                "Collaborated on projects involving Snowflake, cloud"
+                                                " deployments, REST APIs, and Azure-based infrastructure."
+                                            ),
                                         ], className="text-start text-dark mt-1 mb-0"),
                                     ], style={"padding-left": "20px"}),
                                     id="collapse-data-eng-lg",
@@ -264,12 +272,20 @@ timeline_wide = html.Div(
                                 dbc.Collapse(
                                     dbc.Row([
                                         html.Ul([
-                                            html.Li("Implemented image filtering pipeline to count semi-truck trailers "
-                                                    "in satellite images. Achieved 72% accuracy on test set."),
-                                            html.Li("Developed an XGBoost model to predict the probability of direct "
-                                                    "bookings on the Schneider freight app."),
-                                            html.Li("Created PowerBI and Tableau dashboards for 170+ associates, assisting with "
-                                                    "driver training, customer resolutions, and staffing estimates."),
+                                            html.Li([
+                                                "Built an image filtering pipeline to detect and count semi-truck ",
+                                                "trailers in satellite imagery, achieving 72% accuracy on the test set."
+                                            ]),
+                                            html.Li([
+                                                "Developed an XGBoost model to predict the likelihood of direct ",
+                                                "bookings on the Schneider freight app, supporting targeted ",
+                                                "engagement strategies."
+                                            ]),
+                                            html.Li([
+                                                "Collaborated with stakeholders to create Power BI and Tableau ",
+                                                "dashboards used by 170+ associates for decision-making in training, ",
+                                                "staffing, and issue resolution."
+                                            ]),
                                             html.Li("Automated ETL process with Python and SQL."),
                                         ], className="text-start text-dark mt-1 mb-0"),
                                     ], style={"padding-left": "20px"}),
@@ -352,7 +368,7 @@ timeline_wide = html.Div(
                                                     style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
                                                 ),
                                                 html.H5(
-                                                    "Aug 2021 – Dec 2021",
+                                                    "Aug 2021 – Aug 2022",
                                                     className="text-start date-text-large mb-0",
                                                     style={"color": CONFIG['text-dark']}
                                                 ),
@@ -392,9 +408,9 @@ timeline_wide = html.Div(
                                 dbc.Collapse(
                                     dbc.Row([
                                         html.P([
-                                            "Provided hands-on support to over 80 students, ensuring "
-                                                "comprehension of circuit analysis concepts, and honing skills "
-                                                "in communication, critical thinking, and instructional guidance."
+                                            "Provided hands-on support in multiple computer engineering"
+                                            " courses, reinforcing student understanding while developing"
+                                            " communication and leadership skills."
                                         ], 
                                         style={"color": CONFIG['text-dark']},
                                         className="text-start text-dark mt-1 mb-0"),
@@ -672,13 +688,21 @@ timeline_narrow = html.Div(
                                 dbc.Collapse(
                                     dbc.Row([
                                         html.Ul([
-                                            html.Li("Built a process-based model to classify late orders, intersecting "
-                                                    "weather polygons with location data. Deployed process on Anaconda Enterprise."),
-                                            html.Li("Refactored a 118-file Java data pipeline for appointment scheduling "
-                                                    "into a streamlined 33-file Python solution using VSCode, GitHub "
-                                                    "Copilot, Unit Testing, and SQL."),
-                                            html.Li("Completed several smaller projects, working with Snowflake, "
-                                                    "cloud deployments, APIs, Azure ML, and more."),
+                                            html.Li(
+                                                "Created a model to classify the root cause of late deliveries"
+                                                " by identifying traffic delays or severe weather events"
+                                                " intersecting with driver routes. Deployed the solution"
+                                                " to Azure Machine Learning for improved efficiency."
+                                            ),
+                                            html.Li(
+                                                "Refactored a 118-file legacy Java appointment scheduling"
+                                                " system into a streamlined 33-file Python solution,"
+                                                " using unit tests to ensure result consistency and accuracy."
+                                            ),
+                                            html.Li(
+                                                "Collaborated on projects involving Snowflake, cloud"
+                                                " deployments, REST APIs, and Azure-based infrastructure."
+                                            ),
                                         ], className="text-start text-dark mt-1 mb-0"),
                                     ], style={"padding-left": "20px"}),
                                     id="collapse-data-eng",
@@ -800,12 +824,20 @@ timeline_narrow = html.Div(
                                 dbc.Collapse(
                                     dbc.Row([
                                         html.Ul([
-                                            html.Li("Implemented image filtering pipeline to count semi-truck trailers "
-                                                    "in satellite images. Achieved 72% accuracy on test set."),
-                                            html.Li("Developed an XGBoost model to predict the probability of direct "
-                                                    "bookings on the Schneider freight app."),
-                                            html.Li("Created PowerBI and Tableau dashboards for 170+ associates, assisting with "
-                                                    "driver training, customer resolutions, and staffing estimates."),
+                                            html.Li([
+                                                "Built an image filtering pipeline to detect and count semi-truck ",
+                                                "trailers in satellite imagery, achieving 72% accuracy on the test set."
+                                            ]),
+                                            html.Li([
+                                                "Developed an XGBoost model to predict the likelihood of direct ",
+                                                "bookings on the Schneider freight app, supporting targeted ",
+                                                "engagement strategies."
+                                            ]),
+                                            html.Li([
+                                                "Collaborated with stakeholders to create Power BI and Tableau ",
+                                                "dashboards used by 170+ associates for decision-making in training, ",
+                                                "staffing, and issue resolution."
+                                            ]),
                                             html.Li("Automated ETL process with Python and SQL."),
                                         ], className="text-start text-dark mt-1 mb-0"),
                                     ], style={"padding-left": "20px"}),
@@ -888,7 +920,7 @@ timeline_narrow = html.Div(
                                                     style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
                                                 ),
                                                 html.H5(
-                                                    "Aug 2021 – Dec 2021",
+                                                    "Aug 2021 – Aug 2022",
                                                     className="text-start date-text-large mb-0",
                                                     style={"color": CONFIG['text-dark']}
                                                 ),
@@ -928,9 +960,9 @@ timeline_narrow = html.Div(
                                 dbc.Collapse(
                                     dbc.Row([
                                         html.P([
-                                            "Provided hands-on support to over 80 students, ensuring "
-                                                "comprehension of circuit analysis concepts, and honing skills "
-                                                "in communication, critical thinking, and instructional guidance."
+                                            "Provided hands-on support in multiple computer engineering"
+                                            " courses, reinforcing student understanding while developing"
+                                            " communication and leadership skills."
                                         ], 
                                         style={"color": CONFIG['text-dark']},
                                         className="text-start text-dark mt-1 mb-0"),
