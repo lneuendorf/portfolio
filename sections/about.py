@@ -26,7 +26,7 @@ about = (
                     style={"font-size": "36px", "margin-bottom": "10px", "color": CONFIG['text-dark']}
                 ),
                 html.P([
-                    "I am a Green Bay-based Data Engineer with a background in Computer Engineering "
+                    "I am a Green Bay-based Data Science Software Engineer with a background in Computer Engineering "
                     "and Machine Learning. I enjoy spending my free time on sports "
                     "analytics-related side projects, but you can also find me playing disc golf, ultimate "
                     "frisbee, biking, or watching Wisconsin sports."

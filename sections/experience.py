@@ -24,7 +24,7 @@ timeline_wide = html.Div(
         # Timeline items
         html.Div(
             [
-                # Data Engineer at Schneider
+                # Data Science Software Engineer at Schneider
                 html.Div(
                     style={
                         "position": "relative",
@@ -91,7 +91,7 @@ timeline_wide = html.Div(
                                         dbc.Col(
                                             [
                                                 html.H3(
-                                                    "Data Engineer",
+                                                    "Data Science Software Engineer",
                                                     className="text-start",
                                                     style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
                                                 ),
@@ -576,7 +576,7 @@ timeline_narrow = html.Div(
         # Timeline items
         html.Div(
             [
-                # Data Engineer at Schneider
+                # Data Science Software Engineer at Schneider
                 html.Div(
                     style={
                         "position": "relative",
@@ -643,7 +643,7 @@ timeline_narrow = html.Div(
                                         dbc.Col(
                                             [
                                                 html.H3(
-                                                    "Data Engineer",
+                                                    "Data Science Software Engineer",
                                                     className="text-start",
                                                     style={"color": CONFIG['text-dark'], "margin-bottom": "5px"}
                                                 ),
